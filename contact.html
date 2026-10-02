@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | Ibaji Restoration Foundation</title>
+
+  <meta name="description" content="Contact Ibaji Restoration Foundation for enquiries, partnerships, volunteering, advocacy and community development initiatives.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8f6;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* HEADER */
+    header {
+      background: #075e2d;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-area img {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #ffd700;
+    }
+
+    .logo-text h1 {
+      font-size: 19px;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    .logo-text p {
+      font-size: 11px;
+      color: #ffd700;
+      margin-top: 3px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 9px 10px;
+      border-radius: 5px;
+      font-size: 13px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #ffd700;
+      color: #075e2d;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      background:
+        linear-gradient(rgba(0, 77, 37, 0.88), rgba(0, 77, 37, 0.88)),
+        url("https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg") center/cover;
+      min-height: 330px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 50px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffd700;
+      margin: 0 auto 18px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* MAIN */
+    .container {
+      width: 92%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 65px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      color: #075e2d;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .section-title .line {
+      width: 70px;
+      height: 4px;
+      background: #ffd700;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+
+    .section-title p {
+      color: #666;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* CONTACT GRID */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 5px 22px rgba(0,0,0,0.08);
+      border-top: 4px solid #075e2d;
+    }
+
+    .contact-card h3 {
+      color: #075e2d;
+      font-size: 23px;
+      margin-bottom: 22px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 23px;
+    }
+
+    .contact-icon {
+      min-width: 45px;
+      height: 45px;
+      background: #075e2d;
+      color: #ffd700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .contact-item h4 {
+      color: #075e2d;
+      margin-bottom: 3px;
+      font-size: 16px;
+    }
+
+    .contact-item p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .contact-item a {
+      color: #075e2d;
+      font-weight: bold;
+    }
+
+    .contact-item a:hover {
+      color: #c49b00;
+    }
+
+    /* FORM */
+    .contact-form {
+      background: #fff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 5px 22px rgba(0,0,0,0.08);
+      border-top: 4px solid #ffd700;
+    }
+
+    .contact-form h3 {
+      color: #075e2d;
+      font-size: 23px;
+      margin-bottom: 22px;
+    }
+
+    .form-group {
+      margin-bottom: 17px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+      font-size: 14px;
+      font-family: inherit;
+      transition: 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #075e2d;
+      box-shadow: 0 0 0 2px rgba(7,94,45,0.08);
+    }
+
+    .form-group textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background: #075e2d;
+      color: #fff;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background: #064a24;
+    }
+
+    /* OFFICE */
+    .office-section {
+      background: #fff;
+    }
+
+    .office-card {
+      max-width: 900px;
+      margin: auto;
+      background: #f5f8f6;
+      padding: 35px;
+      border-radius: 12px;
+      border-left: 6px solid #075e2d;
+      text-align: center;
+    }
+
+    .office-card h3 {
+      color: #075e2d;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .office-address {
+      font-size: 17px;
+      font-weight: bold;
+      color: #333;
+      line-height: 1.9;
+      text-transform: uppercase;
+    }
+
+    .office-card p {
+      color: #666;
+      margin-top: 15px;
+    }
+
+    /* PRESIDENT */
+    .president-section {
+      background: #f5f8f6;
+    }
+
+    .president-card {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      box-shadow: 0 5px 22px rgba(0,0,0,0.08);
+    }
+
+    .president-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ffd700;
+    }
+
+    .president-card h3 {
+      color: #075e2d;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .president-card .position {
+      color: #c49b00;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .president-card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta {
+      background: #075e2d;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 31px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #e8f5ec;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #ffd700;
+      color: #075e2d;
+      padding: 13px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: #fff;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #063f20;
+      color: #fff;
+      padding: 45px 20px 20px;
+    }
+
+    .footer-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    .footer-col h3 {
+      color: #ffd700;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      color: #d9e9df;
+      font-size: 14px;
+    }
+
+    .footer-col a {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .footer-col a:hover {
+      color: #ffd700;
+    }
+
+    .footer-address {
+      line-height: 1.8;
+      text-transform: uppercase;
+    }
+
+    .footer-bottom {
+      max-width: 1150px;
+      margin: 35px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      text-align: center;
+      color: #cbdacf;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1000px) {
+      nav {
+        gap: 0;
+      }
+
+      nav a {
+        font-size: 12px;
+        padding: 8px 7px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        background: #075e2d;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 20px 20px;
+        box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 13px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        font-size: 14px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .logo-text h1 {
+        font-size: 15px;
+      }
+
+      .logo-text p {
+        font-size: 9px;
+      }
+
+      .logo-area img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .hero {
+        min-height: 290px;
+      }
+
+      .hero h2 {
+        font-size: 31px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .section {
+        padding: 45px 0;
+      }
+
+      .section-title h2 {
+        font-size: 27px;
+      }
+
+      .contact-card,
+      .contact-form {
+        padding: 23px;
+      }
+
+      .president-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .office-address {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+
+      <a href="index.html" class="logo-area">
+        <img src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg" alt="Ibaji Restoration Foundation Logo">
+
+        <div class="logo-text">
+          <h1>IBAJI RESTORATION FOUNDATION</h1>
+          <p>AGITATING FOR GOOD GOVERNANCE</p>
+        </div>
+      </a>
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+      <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="project.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="partners.html">Partners</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <img
+        src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+        alt="Ibaji Restoration Foundation"
+        class="hero-logo"
+      >
+
+      <h2>CONTACT US</h2>
+
+      <p>
+        We welcome your questions, ideas, partnership opportunities and
+        interest in supporting the work of Ibaji Restoration Foundation.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT INFORMATION + FORM -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>GET IN TOUCH</h2>
+        <div class="line"></div>
+
+        <p>
+          Reach out to us for enquiries, partnerships, volunteering,
+          community development initiatives and advocacy.
+        </p>
+      </div>
+
+
+      <div class="contact-grid">
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-card">
+
+          <h3>Contact Information</h3>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">☎</div>
+
+            <div>
+              <h4>Phone</h4>
+
+              <p>
+                <a href="tel:07065421850">07065421850</a><br>
+                <a href="tel:08185911238">08185911238</a>
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">✉</div>
+
+            <div>
+              <h4>Email</h4>
+
+              <p>
+                <a href="mailto:ibajirestorationfoundation@gmail.com">
+                  ibajirestorationfoundation@gmail.com
+                </a>
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">⌂</div>
+
+            <div>
+              <h4>Office Address</h4>
+
+              <p class="footer-address">
+                NO 1 MR INEKWE HOUSE<br>
+                OPPOSITE IBAJI LOCAL GOVERNMENT SECRETARIAT,<br>
+                ONYEDEGA, IBAJI,<br>
+                KOGI STATE, NIGERIA
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">🌐</div>
+
+            <div>
+              <h4>Organisation</h4>
+
+              <p>
+                IBAJI RESTORATION FOUNDATION (NGO)
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+
+          <h3>Send Us a Message</h3>
+
+          <form
+            action="mailto:ibajirestorationfoundation@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+
+            <div class="form-group">
+
+              <label for="name">Full Name</label>
+
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Enter your full name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">Email Address</label>
+
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Enter your email address"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="phone">Phone Number</label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="Phone"
+                placeholder="Enter your phone number"
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="subject">Subject</label>
+
+              <select id="subject" name="Subject">
+
+                <option value="">Select a subject</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="Community Development">Community Development</option>
+                <option value="Advocacy">Advocacy</option>
+                <option value="Other">Other</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">Message</label>
+
+              <textarea
+                id="message"
+                name="Message"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="submit-btn">
+              SEND MESSAGE
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OFFICE ADDRESS -->
+  <section class="section office-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>VISIT OUR OFFICE</h2>
+
+        <div class="line"></div>
+
+        <p>
+          We welcome individuals, community leaders, partners,
+          volunteers and organisations interested in working with us.
+        </p>
+
+      </div>
+
+
+      <div class="office-card">
+
+        <h3>IBAJI RESTORATION FOUNDATION OFFICE</h3>
+
+        <div class="office-address">
+
+          NO 1 MR INEKWE HOUSE<br>
+          OPPOSITE IBAJI LOCAL GOVERNMENT SECRETARIAT,<br>
+          ONYEDEGA, IBAJI,<br>
+          KOGI STATE, NIGERIA
+
+        </div>
+
+        <p>
+          Please contact us before visiting to confirm availability.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRESIDENT -->
+  <section class="section president-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>OUR PRESIDENT</h2>
+
+        <div class="line"></div>
+
+      </div>
+
+
+      <div class="president-card">
+
+        <img
+          src="https://i.ibb.co/L2Gf2Lh/IMG-20260829-WA0166-2.jpg"
+          alt="Comr. Reuben E. Napoleon"
+        >
+
+        <div>
+
+          <h3>COMR. REUBEN E. NAPOLEON</h3>
+
+          <div class="position">
+            PRESIDENT
+          </div>
+
+          <p>
+            The President provides leadership and strategic direction
+            towards achieving the Foundation's vision of good governance,
+            accountability, responsible leadership and sustainable
+            community development.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <h2>LET'S WORK TOGETHER</h2>
+
+    <p>
+      Your voice, support and participation can contribute to building
+      stronger communities and promoting responsible leadership.
+    </p>
+
+    <a href="volunteer.html" class="cta-btn">
+      BECOME A VOLUNTEER
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-grid">
+
+      <!-- ABOUT -->
+      <div class="footer-col">
+
+        <h3>IBAJI RESTORATION FOUNDATION</h3>
+
+        <p>
+          Agitating for Good Governance, accountability,
+          responsible leadership and sustainable community development.
+        </p>
+
+      </div>
+
+
+      <!-- QUICK LINKS -->
+      <div class="footer-col">
+
+        <h3>QUICK LINKS</h3>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="project.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <!-- CONTACT -->
+      <div class="footer-col">
+
+        <h3>CONTACT US</h3>
+
+        <p>
+          <strong>Phone:</strong><br>
+          07065421850<br>
+          08185911238
+        </p>
+
+        <br>
+
+        <p>
+          <strong>Email:</strong><br>
+          ibajirestorationfoundation@gmail.com
+        </p>
+
+        <br>
+
+        <p class="footer-address">
+
+          <strong>Office:</strong><br>
+          NO 1 MR INEKWE HOUSE<br>
+          OPPOSITE IBAJI LOCAL GOVERNMENT SECRETARIAT,<br>
+          ONYEDEGA, IBAJI,<br>
+          KOGI STATE, NIGERIA
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      © 2026 IBAJI RESTORATION FOUNDATION (NGO).
+      ALL RIGHTS RESERVED.
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+
+    function toggleMenu() {
+
+      const navbar = document.getElementById("navbar");
+
+      navbar.classList.toggle("active");
+
+    }
+
+  </script>
+
+</body>
+</html>
