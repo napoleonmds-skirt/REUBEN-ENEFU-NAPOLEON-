@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Publications, reports, statements and advocacy materials from Ibaji Restoration Foundation (NGO).">
+
+<meta name="keywords"
+content="Ibaji Restoration Foundation, publications, reports, advocacy, good governance, community development, Kogi State">
+
+<meta name="author"
+content="Ibaji Restoration Foundation">
+
+<title>Publications | Ibaji Restoration Foundation</title>
+
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7f6;
+    color:#222;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+section{
+    padding:70px 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#075e2d;
+    color:white;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:
+    0 3px 12px rgba(0,0,0,.2);
+}
+
+.header-container{
+    max-width:1200px;
+    margin:auto;
+
+    padding:9px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.logo-area img{
+    width:58px;
+    height:58px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:2px solid white;
+}
+
+.logo-text h1{
+    font-size:18px;
+    line-height:1.2;
+}
+
+.logo-text p{
+    font-size:12px;
+    color:#d9f5e3;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav ul{
+    display:flex;
+
+    list-style:none;
+
+    gap:18px;
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+nav ul li a.active{
+    color:#ffd700;
+}
+
+.menu-btn{
+    display:none;
+
+    font-size:29px;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.page-hero{
+
+    background:
+    linear-gradient(
+        rgba(0,60,30,.88),
+        rgba(0,30,15,.94)
+    ),
+    url("https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+    text-align:center;
+
+    padding:90px 20px;
+}
+
+.page-hero img{
+
+    width:105px;
+    height:105px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:4px solid white;
+
+    margin-bottom:18px;
+}
+
+.page-hero h2{
+
+    font-size:45px;
+
+    margin-bottom:10px;
+}
+
+.page-hero p{
+
+    color:#ffd700;
+
+    font-size:19px;
+
+    font-weight:bold;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+    background:white;
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:45px;
+}
+
+.section-title h2{
+
+    color:#075e2d;
+
+    font-size:34px;
+
+    margin-bottom:8px;
+}
+
+.section-title p{
+
+    color:#666;
+
+    max-width:750px;
+
+    margin:auto;
+}
+
+.intro-text{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+.intro-text p{
+
+    color:#555;
+
+    margin-bottom:15px;
+
+    font-size:15px;
+}
+
+
+/* =========================
+   PUBLICATION FILTER
+========================= */
+
+.filter-section{
+
+    background:#eef7f1;
+
+    padding-top:45px;
+
+    padding-bottom:45px;
+}
+
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+}
+
+.filter-btn{
+
+    border:1px solid #075e2d;
+
+    background:white;
+
+    color:#075e2d;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+
+    background:#075e2d;
+
+    color:white;
+}
+
+
+/* =========================
+   PUBLICATIONS
+========================= */
+
+.publications{
+
+    background:white;
+}
+
+.publication-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+}
+
+.publication-card{
+
+    background:#f7faf8;
+
+    border:
+    1px solid #e1ebe5;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,.07);
+
+    transition:.3s;
+}
+
+.publication-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+}
+
+.publication-top{
+
+    height:125px;
+
+    background:#075e2d;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:15px;
+}
+
+.publication-icon{
+
+    font-size:34px;
+
+    margin-bottom:4px;
+}
+
+.publication-type{
+
+    color:#ffd700;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    text-transform:uppercase;
+}
+
+.publication-content{
+
+    padding:23px;
+}
+
+.publication-content h3{
+
+    color:#075e2d;
+
+    font-size:19px;
+
+    margin-bottom:9px;
+}
+
+.publication-content p{
+
+    color:#666;
+
+    font-size:13px;
+
+    margin-bottom:15px;
+}
+
+.publication-meta{
+
+    color:#888;
+
+    font-size:11px;
+
+    margin-bottom:15px;
+}
+
+.publication-buttons{
+
+    display:flex;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+}
+
+.pub-btn{
+
+    display:inline-block;
+
+    background:#075e2d;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:9px 13px;
+
+    border-radius:4px;
+
+    font-size:11px;
+
+    font-weight:bold;
+}
+
+.pub-btn.secondary{
+
+    background:#ffd700;
+
+    color:#123b24;
+}
+
+.pub-btn:hover{
+
+    opacity:.85;
+}
+
+
+/* =========================
+   FEATURED PUBLICATION
+========================= */
+
+.featured{
+
+    background:#eef7f1;
+}
+
+.featured-box{
+
+    max-width:950px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1.3fr;
+
+    background:white;
+
+    border-radius:13px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+}
+
+.featured-image{
+
+    min-height:330px;
+
+    background:#063b1e;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.featured-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.featured-content{
+
+    padding:40px;
+}
+
+.featured-label{
+
+    display:inline-block;
+
+    background:#075e2d;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:10px;
+
+    font-weight:bold;
+
+    margin-bottom:13px;
+}
+
+.featured-content h3{
+
+    color:#075e2d;
+
+    font-size:27px;
+
+    margin-bottom:12px;
+}
+
+.featured-content p{
+
+    color:#555;
+
+    margin-bottom:16px;
+}
+
+
+/* =========================
+   RESOURCES
+========================= */
+
+.resources{
+
+    background:white;
+}
+
+.resource-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+.resource-card{
+
+    padding:27px 20px;
+
+    text-align:center;
+
+    background:#f7faf8;
+
+    border:
+    1px solid #e1ebe5;
+
+    border-radius:10px;
+}
+
+.resource-icon{
+
+    font-size:35px;
+
+    margin-bottom:10px;
+}
+
+.resource-card h3{
+
+    color:#075e2d;
+
+    font-size:18px;
+
+    margin-bottom:7px;
+}
+
+.resource-card p{
+
+    color:#666;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   SUBMISSION / CONTACT
+========================= */
+
+.submit-section{
+
+    background:#eef7f1;
+
+    text-align:center;
+}
+
+.submit-box{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,.06);
+}
+
+.submit-box h2{
+
+    color:#075e2d;
+
+    font-size:27px;
+
+    margin-bottom:9px;
+}
+
+.submit-box p{
+
+    color:#666;
+
+    margin-bottom:22px;
+}
+
+.submit-btn{
+
+    display:inline-block;
+
+    background:#075e2d;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:13px 25px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+}
+
+.submit-btn:hover{
+
+    background:#063b1e;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+
+    background:#075e2d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:65px 20px;
+}
+
+.cta h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:0 auto 25px;
+
+    color:#dcebe2;
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+.cta-btn{
+
+    display:inline-block;
+
+    background:#ffd700;
+
+    color:#123b24;
+
+    text-decoration:none;
+
+    padding:13px 25px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+}
+
+.cta-btn.secondary{
+
+    background:white;
+
+    color:#075e2d;
+}
+
+.cta-btn:hover{
+
+    opacity:.9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#063b1e;
+
+    color:white;
+
+    padding:45px 20px 20px;
+}
+
+.footer-content{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr 1fr;
+
+    gap:40px;
+}
+
+footer h3{
+
+    color:#ffd700;
+
+    margin-bottom:14px;
+}
+
+footer p{
+
+    color:#d5e4da;
+
+    font-size:14px;
+
+    margin-bottom:5px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-bottom:8px;
+}
+
+footer a{
+
+    color:#d5e4da;
+
+    text-decoration:none;
+
+    font-size:14px;
+}
+
+footer a:hover{
+    color:#ffd700;
+}
+
+.copyright{
+
+    max-width:1100px;
+
+    margin:30px auto 0;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    border-top:
+    1px solid rgba(255,255,255,.2);
+
+    color:#c9d8cf;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .header-container{
+        padding:8px 15px;
+    }
+
+    .logo-area img{
+        width:48px;
+        height:48px;
+    }
+
+    .logo-text h1{
+        font-size:14px;
+    }
+
+    .logo-text p{
+        font-size:10px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav{
+
+        display:none;
+
+        position:absolute;
+
+        top:66px;
+
+        left:0;
+
+        width:100%;
+
+        background:#075e2d;
+
+        padding:12px 0;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        gap:0;
+
+        text-align:center;
+    }
+
+    nav ul li{
+        padding:11px;
+    }
+
+    .page-hero{
+        padding:65px 20px;
+    }
+
+    .page-hero h2{
+        font-size:34px;
+    }
+
+    .publication-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .featured-box{
+        grid-template-columns:1fr;
+    }
+
+    .featured-image{
+        min-height:280px;
+    }
+
+    .resource-grid{
+        grid-template-columns:
+        repeat(3,1fr);
+    }
+
+    .footer-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+}
+
+
+@media(max-width:550px){
+
+    .page-hero img{
+        width:85px;
+        height:85px;
+    }
+
+    .page-hero h2{
+        font-size:29px;
+    }
+
+    .publication-grid{
+        grid-template-columns:1fr;
+    }
+
+    .resource-grid{
+        grid-template-columns:1fr;
+    }
+
+    .featured-content{
+        padding:28px 22px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="header-container">
+
+
+<div class="logo-area">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo"
+>
+
+<div class="logo-text">
+
+<h1>
+IBAJI RESTORATION FOUNDATION
+</h1>
+
+<p>
+Agitating for Good Governance
+</p>
+
+</div>
+
+</div>
+
+
+<div
+class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+
+<nav id="navbar">
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+<li>
+<a href="projects.html">
+Projects
+</a>
+</li>
+
+<li>
+<a href="publications.html" class="active">
+Publications
+</a>
+</li>
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="page-hero">
+
+<div class="container">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo"
+>
+
+<h2>
+Publications
+</h2>
+
+<p>
+Knowledge • Advocacy • Accountability • Community Development
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTRODUCTION
+========================= -->
+
+<section class="intro">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Publications
+</h2>
+
+</div>
+
+
+<div class="intro-text">
+
+<p>
+
+Ibaji Restoration Foundation uses publications and
+information resources to promote awareness, constructive
+dialogue, good governance and community development.
+
+</p>
+
+<p>
+
+This section will contain reports, advocacy materials,
+statements, research documents, newsletters and other
+publications produced by or associated with the Foundation.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FILTER
+========================= -->
+
+<section class="filter-section">
+
+<div class="container">
+
+<div class="filter-buttons">
+
+<button
+class="filter-btn active"
+onclick="filterPublications('all', this)">
+
+All
+
+</button>
+
+<button
+class="filter-btn"
+onclick="filterPublications('report', this)">
+
+Reports
+
+</button>
+
+<button
+class="filter-btn"
+onclick="filterPublications('advocacy', this)">
+
+Advocacy
+
+</button>
+
+<button
+class="filter-btn"
+onclick="filterPublications('governance', this)">
+
+Governance
+
+</button>
+
+<button
+class="filter-btn"
+onclick="filterPublications('community', this)">
+
+Community
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PUBLICATIONS
+========================= -->
+
+<section class="publications">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Featured Resources
+</h2>
+
+<p>
+Publication files can be added to this section as they
+become available.
+</p>
+
+</div>
+
+
+<div class="publication-grid">
+
+
+<!-- PUBLICATION 1 -->
+
+<div
+class="publication-card"
+data-category="report">
+
+<div class="publication-top">
+
+<div class="publication-icon">
+📊
+</div>
+
+<div class="publication-type">
+Report
+</div>
+
+</div>
+
+<div class="publication-content">
+
+<h3>
+Foundation Annual Report
+</h3>
+
+<p>
+
+Placeholder for the Foundation's annual report,
+activities, achievements and priorities.
+
+</p>
+
+<div class="publication-meta">
+Year: [20XX] • PDF
+</div>
+
+<div class="publication-buttons">
+
+<a
+href="#"
+class="pub-btn">
+
+Read
+
+</a>
+
+<a
+href="#"
+class="pub-btn secondary">
+
+Download
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PUBLICATION 2 -->
+
+<div
+class="publication-card"
+data-category="advocacy">
+
+<div class="publication-top">
+
+<div class="publication-icon">
+📢
+</div>
+
+<div class="publication-type">
+Advocacy
+</div>
+
+</div>
+
+<div class="publication-content">
+
+<h3>
+Good Governance Advocacy Brief
+</h3>
+
+<p>
+
+A placeholder for advocacy materials addressing
+governance, accountability and citizen participation.
+
+</p>
+
+<div class="publication-meta">
+Year: [20XX] • PDF
+</div>
+
+<div class="publication-buttons">
+
+<a
+href="#"
+class="pub-btn">
+
+Read
+
+</a>
+
+<a
+href="#"
+class="pub-btn secondary">
+
+Download
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PUBLICATION 3 -->
+
+<div
+class="publication-card"
+data-category="governance">
+
+<div class="publication-top">
+
+<div class="publication-icon">
+🏛️
+</div>
+
+<div class="publication-type">
+Governance
+</div>
+
+</div>
+
+<div class="publication-content">
+
+<h3>
+Citizens & Good Governance
+</h3>
+
+<p>
+
+Educational material about citizen participation,
+accountability and responsible governance.
+
+</p>
+
+<div class="publication-meta">
+Year: [20XX] • PDF
+</div>
+
+<div class="publication-buttons">
+
+<a
+href="#"
+class="pub-btn">
+
+Read
+
+</a>
+
+<a
+href="#"
+class="pub-btn secondary">
+
+Download
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PUBLICATION 4 -->
+
+<div
+class="publication-card"
+data-category="community">
+
+<div class="publication-top">
+
+<div class="publication-icon">
+🤝
+</div>
+
+<div class="publication-type">
+Community
+</div>
+
+</div>
+
+<div class="publication-content">
+
+<h3>
+Community Development Report
+</h3>
+
+<p>
+
+Placeholder for a report highlighting community needs,
+initiatives and development activities.
+
+</p>
+
+<div class="publication-meta">
+Year: [20XX] • PDF
+</div>
+
+<div class="publication-buttons">
+
+<a
+href="#"
+class="pub-btn">
+
+Read
+
+</a>
+
+<a
+href="#"
+class="pub-btn secondary">
+
+Download
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PUBLICATION 5 -->
+
+<div
+class="publication-card"
+data-category="advocacy">
+
+<div class="publication-top">
+
+<div class="publication-icon">
+🗣️
+</div>
+
+<div class="publication-type">
+Statement
+</div>
+
+</div>
+
+<div class="publication-content">
+
+<h3>
+Foundation Public Statement
+</h3>
+
+<p>
+
+Placeholder for official statements and positions
+issued by Ibaji Restoration Foundation.
+
+</p>
+
+<div class="publication-meta">
+Date: [DD/MM/20XX] • PDF
+</div>
+
+<div class="publication-buttons">
+
+<a
+href="#"
+class="pub-btn">
+
+Read
+
+</a>
+
+<a
+href="#"
+class="pub-btn secondary">
+
+Download
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PUBLICATION 6 -->
+
+<div
+class="publication-card"
+data-category="community">
+
+<div class="publication-top">
+
+<div class="publication-icon">
+📰
+</div>
+
+<div class="publication-type">
+Newsletter
+</div>
+
+</div>
+
+<div class="publication-content">
+
+<h3>
+Foundation Newsletter
+</h3>
+
+<p>
+
+Placeholder for newsletters featuring Foundation
+activities, community updates and upcoming events.
+
+</p>
+
+<div class="publication-meta">
+Issue: [No. 01] • PDF
+</div>
+
+<div class="publication-buttons">
+
+<a
+href="#"
+class="pub-btn">
+
+Read
+
+</a>
+
+<a
+href="#"
+class="pub-btn secondary">
+
+Download
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FEATURED
+========================= -->
+
+<section class="featured">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Featured Publication
+</h2>
+
+</div>
+
+
+<div class="featured-box">
+
+
+<div class="featured-image">
+
+<img
+src="https://i.ibb.co/vxC7zsC6/IMG-20260829-WA0180.jpg"
+alt="Ibaji Restoration Foundation Publication"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="featured-content">
+
+<span class="featured-label">
+FEATURED RESOURCE
+</span>
+
+<h3>
+Building Awareness for Good Governance
+</h3>
+
+<p>
+
+This section can feature an important Foundation report,
+policy brief, advocacy publication or community development
+document.
+
+</p>
+
+<p>
+
+Replace this text with the description of your actual
+featured publication when the document is ready.
+
+</p>
+
+
+<a
+href="#"
+class="submit-btn">
+
+Read Publication
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     RESOURCE TYPES
+========================= -->
+
+<section class="resources">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Resource Centre
+</h2>
+
+<p>
+Information resources that can be added to the website.
+</p>
+
+</div>
+
+
+<div class="resource-grid">
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+📄
+</div>
+
+<h3>
+Reports
+</h3>
+
+<p>
+Annual reports, project reports and activity reports.
+</p>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+📢
+</div>
+
+<h3>
+Statements
+</h3>
+
+<p>
+Official Foundation statements and advocacy messages.
+</p>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+📚
+</div>
+
+<h3>
+Research
+</h3>
+
+<p>
+Research, articles and educational materials.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SUBMIT
+========================= -->
+
+<section class="submit-section">
+
+<div class="container">
+
+<div class="submit-box">
+
+<h2>
+Have a Question About Our Publications?
+</h2>
+
+<p>
+
+Contact Ibaji Restoration Foundation for information
+about our reports, advocacy materials and publications.
+
+</p>
+
+<a
+href="contact.html"
+class="submit-btn">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Stay Informed
+</h2>
+
+<p>
+
+Explore our programmes, projects and news to learn more
+about the Foundation's work in promoting good governance
+and community development.
+
+</p>
+
+
+<div class="cta-buttons">
+
+<a
+href="news.html"
+class="cta-btn">
+
+Latest News
+
+</a>
+
+
+<a
+href="projects.html"
+class="cta-btn secondary">
+
+Our Projects
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-content">
+
+
+<div>
+
+<h3>
+IBAJI RESTORATION FOUNDATION
+</h3>
+
+<p>
+
+Agitating for Good Governance.
+
+Promoting accountability, responsible leadership,
+citizen participation and sustainable development.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+<li>
+<a href="projects.html">
+Projects
+</a>
+</li>
+
+<li>
+<a href="publications.html">
+Publications
+</a>
+</li>
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+Focus Areas
+</h3>
+
+<p>
+Good Governance
+</p>
+
+<p>
+Advocacy
+</p>
+
+<p>
+Community Development
+</p>
+
+<p>
+Civic Education
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Ibaji Restoration Foundation (NGO).
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("navbar")
+    .classList
+    .toggle("active");
+
+}
+
+
+/* =========================
+   PUBLICATION FILTER
+========================= */
+
+function filterPublications(category, button){
+
+    const cards =
+    document.querySelectorAll(".publication-card");
+
+    const buttons =
+    document.querySelectorAll(".filter-btn");
+
+
+    buttons.forEach(function(btn){
+
+        btn.classList.remove("active");
+
+    });
+
+
+    button.classList.add("active");
+
+
+    cards.forEach(function(card){
+
+        if(
+            category === "all" ||
+            card.dataset.category === category
+        ){
+
+            card.style.display = "block";
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* =========================
+   CLOSE MOBILE MENU
+========================= */
+
+document
+.querySelectorAll("#navbar a")
+.forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            document
+            .getElementById("navbar")
+            .classList
+            .remove("active");
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+
+  </html>
