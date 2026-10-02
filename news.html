@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Latest news, announcements, advocacy activities and community updates from Ibaji Restoration Foundation (NGO).">
+
+<title>News & Updates | Ibaji Restoration Foundation</title>
+
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7f6;
+    color:#222;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+section{
+    padding:70px 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#075e2d;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,0.2);
+}
+
+.header-container{
+    max-width:1200px;
+    margin:auto;
+    padding:9px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.logo-area img{
+    width:58px;
+    height:58px;
+    object-fit:cover;
+    border-radius:50%;
+    background:white;
+    border:2px solid white;
+}
+
+.logo-text h1{
+    font-size:18px;
+    line-height:1.2;
+}
+
+.logo-text p{
+    font-size:12px;
+    color:#d9f5e3;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+nav ul li a.active{
+    color:#ffd700;
+}
+
+.menu-btn{
+    display:none;
+    font-size:29px;
+    cursor:pointer;
+}
+
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero{
+
+    background:
+    linear-gradient(
+        rgba(0,60,30,.88),
+        rgba(0,30,15,.94)
+    ),
+    url("https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+
+    padding:90px 20px;
+}
+
+.page-hero img{
+
+    width:105px;
+    height:105px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:4px solid white;
+
+    margin-bottom:18px;
+}
+
+.page-hero h2{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.page-hero p{
+    color:#ffd700;
+    font-size:19px;
+    font-weight:bold;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    color:#075e2d;
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#666;
+    max-width:750px;
+    margin:auto;
+}
+
+
+/* =========================
+   FEATURED NEWS
+========================= */
+
+.featured{
+    background:white;
+}
+
+.featured-card{
+
+    display:grid;
+
+    grid-template-columns:
+    1.2fr 1fr;
+
+    background:#f7faf8;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 7px 25px rgba(0,0,0,.10);
+}
+
+.featured-image{
+    min-height:390px;
+}
+
+.featured-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.featured-content{
+    padding:40px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.category{
+
+    display:inline-block;
+
+    background:#075e2d;
+
+    color:white;
+
+    padding:6px 13px;
+
+    border-radius:20px;
+
+    width:max-content;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    margin-bottom:13px;
+}
+
+.featured-content h3{
+
+    color:#075e2d;
+
+    font-size:29px;
+
+    line-height:1.25;
+
+    margin-bottom:13px;
+}
+
+.date{
+
+    color:#888;
+
+    font-size:12px;
+
+    margin-bottom:15px;
+}
+
+.featured-content p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.read-btn{
+
+    display:inline-block;
+
+    background:#075e2d;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+    width:max-content;
+
+    transition:.3s;
+}
+
+.read-btn:hover{
+    background:#063b1e;
+}
+
+
+/* =========================
+   NEWS GRID
+========================= */
+
+.latest{
+    background:#eef7f1;
+}
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+}
+
+.news-card{
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,.07);
+
+    transition:.3s;
+}
+
+.news-card:hover{
+    transform:translateY(-6px);
+}
+
+.news-image{
+    position:relative;
+}
+
+.news-image img{
+
+    width:100%;
+
+    height:210px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.news-category{
+
+    position:absolute;
+
+    left:12px;
+    bottom:12px;
+
+    background:#075e2d;
+
+    color:white;
+
+    padding:5px 10px;
+
+    border-radius:4px;
+
+    font-size:10px;
+
+    font-weight:bold;
+}
+
+.news-content{
+    padding:22px;
+}
+
+.news-content h3{
+
+    color:#075e2d;
+
+    font-size:19px;
+
+    margin:7px 0 9px;
+
+    line-height:1.35;
+}
+
+.news-content p{
+
+    color:#666;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+}
+
+.news-link{
+
+    color:#075e2d;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   WHATSAPP SHARE
+========================= */
+
+.share-area{
+
+    border-top:
+    1px solid #e2e8e4;
+
+    margin-top:17px;
+
+    padding-top:13px;
+}
+
+.share-title{
+
+    display:block;
+
+    color:#888;
+
+    font-size:11px;
+
+    margin-bottom:7px;
+}
+
+.whatsapp-btn{
+
+    display:inline-block;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:7px 12px;
+
+    border-radius:5px;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+.whatsapp-btn:hover{
+    opacity:.85;
+}
+
+
+/* =========================
+   ADVOCACY SECTION
+========================= */
+
+.advocacy{
+    background:white;
+}
+
+.advocacy-box{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    background:#f7faf8;
+
+    padding:45px 30px;
+
+    border-radius:12px;
+
+    border:
+    1px solid #e0e9e3;
+}
+
+.advocacy-box h3{
+
+    color:#075e2d;
+
+    font-size:28px;
+
+    margin-bottom:12px;
+}
+
+.advocacy-box p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    color:#555;
+}
+
+
+/* =========================
+   NEWSLETTER / CTA
+========================= */
+
+.cta{
+
+    background:#075e2d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:65px 20px;
+}
+
+.cta h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:0 auto 25px;
+
+    color:#dcebe2;
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#ffd700;
+
+    color:#123b24;
+
+    text-decoration:none;
+
+    padding:13px 25px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#063b1e;
+
+    color:white;
+
+    padding:45px 20px 20px;
+}
+
+.footer-content{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr 1fr;
+
+    gap:40px;
+}
+
+footer h3{
+
+    color:#ffd700;
+
+    margin-bottom:14px;
+}
+
+footer p{
+    color:#d5e4da;
+    font-size:14px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-bottom:8px;
+}
+
+footer a{
+
+    color:#d5e4da;
+
+    text-decoration:none;
+
+    font-size:14px;
+}
+
+footer a:hover{
+    color:#ffd700;
+}
+
+.copyright{
+
+    max-width:1100px;
+
+    margin:30px auto 0;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    border-top:
+    1px solid rgba(255,255,255,.2);
+
+    color:#c9d8cf;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .header-container{
+        padding:8px 15px;
+    }
+
+    .logo-area img{
+        width:48px;
+        height:48px;
+    }
+
+    .logo-text h1{
+        font-size:14px;
+    }
+
+    .logo-text p{
+        font-size:10px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav{
+
+        display:none;
+
+        position:absolute;
+
+        top:66px;
+
+        left:0;
+
+        width:100%;
+
+        background:#075e2d;
+
+        padding:12px 0;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        gap:0;
+
+        text-align:center;
+    }
+
+    nav ul li{
+        padding:11px;
+    }
+
+    .page-hero{
+        padding:65px 20px;
+    }
+
+    .page-hero h2{
+        font-size:34px;
+    }
+
+    .featured-card{
+        grid-template-columns:1fr;
+    }
+
+    .featured-image{
+        min-height:280px;
+    }
+
+    .featured-content{
+        padding:30px;
+    }
+
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+
+
+/* SMALL PHONES */
+
+@media(max-width:450px){
+
+    .page-hero img{
+        width:85px;
+        height:85px;
+    }
+
+    .page-hero h2{
+        font-size:29px;
+    }
+
+    .featured-content h3{
+        font-size:24px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="header-container">
+
+
+<div class="logo-area">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo"
+>
+
+<div class="logo-text">
+
+<h1>
+IBAJI RESTORATION FOUNDATION
+</h1>
+
+<p>
+Agitating for Good Governance
+</p>
+
+</div>
+
+</div>
+
+
+<div
+class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+
+<nav id="navbar">
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+<li>
+<a
+href="news.html"
+class="active">
+News
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     PAGE HERO
+========================= -->
+
+<section class="page-hero">
+
+<div class="container">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo"
+>
+
+<h2>
+News & Updates
+</h2>
+
+<p>
+Agitating for Good Governance
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FEATURED NEWS
+========================= -->
+
+<section class="featured">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Featured Update
+</h2>
+
+<p>
+News, activities and important updates from the Foundation.
+</p>
+
+</div>
+
+
+<div class="featured-card">
+
+
+<div class="featured-image">
+
+<img
+src="https://i.ibb.co/Kc1CXf0m/IMG-20260829-WA0166.jpg"
+alt="Ibaji Restoration Foundation"
+>
+
+</div>
+
+
+<div class="featured-content">
+
+<span class="category">
+FOUNDATION UPDATE
+</span>
+
+<h3>
+Ibaji Restoration Foundation Strengthens Commitment to Good Governance
+</h3>
+
+<div class="date">
+August 29, 2026
+</div>
+
+<p>
+
+Ibaji Restoration Foundation continues its commitment
+to advocating for good governance, accountability,
+responsible leadership and meaningful community
+participation.
+
+</p>
+
+<p>
+
+The Foundation believes that informed citizens,
+constructive dialogue and responsible leadership are
+important to building stronger communities.
+
+</p>
+
+
+<a
+href="#latest-news"
+class="read-btn">
+
+Read Updates
+
+</a>
+
+
+<div class="share-area">
+
+<span class="share-title">
+Share this update on WhatsApp
+</span>
+
+<a
+class="whatsapp-btn"
+target="_blank"
+href="https://wa.me/?text=Ibaji%20Restoration%20Foundation%20-%20Agitating%20for%20Good%20Governance">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LATEST NEWS
+========================= -->
+
+<section
+class="latest"
+id="latest-news">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Latest News & Activities
+</h2>
+
+<p>
+Follow our advocacy, community engagement and Foundation activities.
+</p>
+
+</div>
+
+
+<div class="news-grid">
+
+
+<!-- NEWS 1 -->
+
+<article class="news-card">
+
+<div class="news-image">
+
+<img
+src="https://i.ibb.co/9B1cLgh/IMG-20260829-WA0181.jpg"
+alt="Ibaji Restoration Foundation Activity"
+>
+
+<span class="news-category">
+ADVOCACY
+</span>
+
+</div>
+
+
+<div class="news-content">
+
+<div class="date">
+August 29, 2026
+</div>
+
+<h3>
+Advocating for Responsible Leadership
+</h3>
+
+<p>
+
+The Foundation promotes responsible leadership
+and encourages citizens to take an active role
+in governance.
+
+</p>
+
+<a
+href="#"
+class="news-link">
+
+Read More →
+
+</a>
+
+
+<div class="share-area">
+
+<span class="share-title">
+Share
+</span>
+
+<a
+class="whatsapp-btn"
+target="_blank"
+href="https://wa.me/?text=Advocating%20for%20Responsible%20Leadership%20-%20Ibaji%20Restoration%20Foundation">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- NEWS 2 -->
+
+<article class="news-card">
+
+<div class="news-image">
+
+<img
+src="https://i.ibb.co/vxC7zsC6/IMG-20260829-WA0180.jpg"
+alt="Community Development"
+>
+
+<span class="news-category">
+COMMUNITY
+</span>
+
+</div>
+
+
+<div class="news-content">
+
+<div class="date">
+August 29, 2026
+</div>
+
+<h3>
+Community Development and Participation
+</h3>
+
+<p>
+
+Strong communities are built through participation,
+dialogue, cooperation and a shared commitment
+to development.
+
+</p>
+
+<a
+href="#"
+class="news-link">
+
+Read More →
+
+</a>
+
+
+<div class="share-area">
+
+<span class="share-title">
+Share
+</span>
+
+<a
+class="whatsapp-btn"
+target="_blank"
+href="https://wa.me/?text=Community%20Development%20and%20Participation%20-%20Ibaji%20Restoration%20Foundation">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- NEWS 3 -->
+
+<article class="news-card">
+
+<div class="news-image">
+
+<img
+src="https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg"
+alt="Good Governance Advocacy"
+>
+
+<span class="news-category">
+GOOD GOVERNANCE
+</span>
+
+</div>
+
+
+<div class="news-content">
+
+<div class="date">
+August 29, 2026
+</div>
+
+<h3>
+Promoting Accountability and Transparency
+</h3>
+
+<p>
+
+Ibaji Restoration Foundation advocates for
+transparency, accountability and responsible
+management of public affairs.
+
+</p>
+
+<a
+href="#"
+class="news-link">
+
+Read More →
+
+</a>
+
+
+<div class="share-area">
+
+<span class="share-title">
+Share
+</span>
+
+<a
+class="whatsapp-btn"
+target="_blank"
+href="https://wa.me/?text=Promoting%20Accountability%20and%20Transparency%20-%20Ibaji%20Restoration%20Foundation">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- NEWS 4 -->
+
+<article class="news-card">
+
+<div class="news-image">
+
+<img
+src="https://i.ibb.co/Kc1CXf0m/IMG-20260829-WA0166.jpg"
+alt="Foundation Leadership"
+>
+
+<span class="news-category">
+LEADERSHIP
+</span>
+
+</div>
+
+
+<div class="news-content">
+
+<div class="date">
+August 29, 2026
+</div>
+
+<h3>
+Leadership and the Foundation's Mission
+</h3>
+
+<p>
+
+The Foundation's leadership continues to focus
+on its mission of promoting good governance
+and community development.
+
+</p>
+
+<a
+href="leadership.html"
+class="news-link">
+
+Meet Our Leadership →
+
+</a>
+
+
+<div class="share-area">
+
+<span class="share-title">
+Share
+</span>
+
+<a
+class="whatsapp-btn"
+target="_blank"
+href="https://wa.me/?text=Ibaji%20Restoration%20Foundation%20Leadership">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- NEWS 5 -->
+
+<article class="news-card">
+
+<div class="news-image">
+
+<img
+src="https://i.ibb.co/gQfmp9d/IMG-20260829-WA0181.jpg"
+alt="Citizen Participation"
+>
+
+<span class="news-category">
+CITIZENS
+</span>
+
+</div>
+
+
+<div class="news-content">
+
+<div class="date">
+FOUNDATION UPDATE
+</div>
+
+<h3>
+Encouraging Citizen Participation
+</h3>
+
+<p>
+
+Citizens have an important role to play in
+building stronger communities and promoting
+accountable governance.
+
+</p>
+
+<a
+href="programmes.html"
+class="news-link">
+
+Our Programmes →
+
+</a>
+
+
+<div class="share-area">
+
+<span class="share-title">
+Share
+</span>
+
+<a
+class="whatsapp-btn"
+target="_blank"
+href="https://wa.me/?text=Encouraging%20Citizen%20Participation%20-%20Ibaji%20Restoration%20Foundation">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- NEWS 6 -->
+
+<article class="news-card">
+
+<div class="news-image">
+
+<img
+src="https://i.ibb.co/mVPb6k9M/IMG-20260829-WA0176.jpg"
+alt="Ibaji Restoration Foundation"
+>
+
+<span class="news-category">
+FOUNDATION
+</span>
+
+</div>
+
+
+<div class="news-content">
+
+<div class="date">
+FOUNDATION UPDATE
+</div>
+
+<h3>
+Building a Better Future for Our Communities
+</h3>
+
+<p>
+
+The Foundation seeks to support positive change
+through advocacy, awareness, community engagement
+and good-governance initiatives.
+
+</p>
+
+<a
+href="about.html"
+class="news-link">
+
+About the Foundation →
+
+</a>
+
+
+<div class="share-area">
+
+<span class="share-title">
+Share
+</span>
+
+<a
+class="whatsapp-btn"
+target="_blank"
+href="https://wa.me/?text=Building%20a%20Better%20Future%20-%20Ibaji%20Restoration%20Foundation">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ADVOCACY MESSAGE
+========================= -->
+
+<section class="advocacy">
+
+<div class="container">
+
+<div class="advocacy-box">
+
+<h3>
+Our Voice for Good Governance
+</h3>
+
+<p>
+
+Ibaji Restoration Foundation is committed to constructive
+advocacy that promotes accountability, transparency,
+citizen participation, responsible leadership and
+sustainable community development.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CALL TO ACTION
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Stay Connected With Us
+</h2>
+
+<p>
+
+Follow the Foundation's activities and join the movement
+for good governance and community development.
+
+</p>
+
+<a
+href="contact.html"
+class="btn">
+
+Contact the Foundation
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-content">
+
+
+<div>
+
+<h3>
+IBAJI RESTORATION FOUNDATION
+</h3>
+
+<p>
+
+Agitating for Good Governance.
+
+Promoting accountability, responsible leadership,
+citizen participation and sustainable development.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+Our Focus
+</h3>
+
+<p>
+Good Governance
+</p>
+
+<p>
+Accountability
+</p>
+
+<p>
+Community Development
+</p>
+
+<p>
+Citizen Participation
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Ibaji Restoration Foundation (NGO).
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("navbar")
+    .classList
+    .toggle("active");
+
+}
+
+
+document
+.querySelectorAll("#navbar a")
+.forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            document
+            .getElementById("navbar")
+            .classList
+            .remove("active");
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+
+  </html>
