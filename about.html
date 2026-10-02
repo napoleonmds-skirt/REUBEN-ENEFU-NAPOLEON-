@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Learn about Ibaji Restoration Foundation (NGO), our mission, vision, values and commitment to good governance and community development.">
+
+<meta name="keywords"
+content="Ibaji Restoration Foundation, Ibaji NGO, good governance, community development, Kogi State, Nigeria">
+
+<meta name="author"
+content="Ibaji Restoration Foundation">
+
+<title>About Us | Ibaji Restoration Foundation</title>
+
+<style>
+
+/* ===============================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7f6;
+    color: #222;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+header {
+    background: #075e2d;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.20);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 9px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo-area img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid white;
+}
+
+.logo-text h1 {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.logo-text p {
+    font-size: 12px;
+    color: #d9f5e3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffd700;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+/* ===============================
+   PAGE HERO
+================================ */
+
+.page-hero {
+    min-height: 390px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0,60,30,0.86),
+            rgba(0,30,15,0.92)
+        ),
+        url("https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+}
+
+.page-hero-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.page-hero-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    border: 4px solid white;
+    margin-bottom: 18px;
+}
+
+.page-hero h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.page-hero h2 span {
+    color: #ffd700;
+}
+
+.page-hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #e6f2ea;
+}
+
+/* ===============================
+   GENERAL SECTIONS
+================================ */
+
+section {
+    padding: 75px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: #075e2d;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+}
+
+/* ===============================
+   WHO WE ARE
+================================ */
+
+.about-main {
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.12);
+}
+
+.about-text h3 {
+    color: #075e2d;
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #555;
+    margin-bottom: 17px;
+}
+
+/* ===============================
+   MISSION VISION
+================================ */
+
+.mission-vision {
+    background: #eef7f1;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.mv-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 12px;
+    border-top: 5px solid #075e2d;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.07);
+}
+
+.mv-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #075e2d;
+    color: #ffd700;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.mv-card h3 {
+    color: #075e2d;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mv-card p {
+    color: #555;
+}
+
+/* ===============================
+   VALUES
+================================ */
+
+.values {
+    background: white;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.value-card {
+    background: #f7faf8;
+    border: 1px solid #e1ebe5;
+    padding: 28px 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.value-card h3 {
+    color: #075e2d;
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.value-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* ===============================
+   OBJECTIVES
+================================ */
+
+.objectives {
+    background: #eef7f1;
+}
+
+.objectives-box {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,0.07);
+}
+
+.objectives-box h3 {
+    color: #075e2d;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.objectives-list {
+    list-style: none;
+}
+
+.objectives-list li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.objectives-list li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: #075e2d;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* ===============================
+   GOVERNANCE
+================================ */
+
+.governance {
+    background: white;
+}
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.governance-card {
+    text-align: center;
+    padding: 28px 15px;
+    background: #f7faf8;
+    border: 1px solid #e1ebe5;
+    border-radius: 10px;
+}
+
+.governance-card .icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.governance-card h3 {
+    color: #075e2d;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.governance-card p {
+    color: #666;
+    font-size: 13px;
+}
+
+/* ===============================
+   PRESIDENT MESSAGE
+================================ */
+
+.president-section {
+    background: #eef7f1;
+}
+
+.president-card {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+
+    background: white;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,0.10);
+}
+
+.president-photo {
+    min-height: 390px;
+}
+
+.president-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.president-info {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.president-label {
+    display: inline-block;
+    width: fit-content;
+
+    background: #075e2d;
+    color: white;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.president-info h3 {
+    color: #075e2d;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.president-info p {
+    color: #555;
+    margin-bottom: 13px;
+}
+
+/* ===============================
+   CTA
+================================ */
+
+.cta {
+    background: #075e2d;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #e0eee5;
+}
+
+.phone {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.phone a {
+    color: #ffd700;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #ffd700;
+    color: #123b24;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+    background: #063b1e;
+    color: white;
+    padding: 45px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+footer h3 {
+    color: #ffd700;
+    margin-bottom: 14px;
+}
+
+footer p {
+    color: #d5e4da;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #d5e4da;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+.footer-phone {
+    margin-top: 12px;
+}
+
+.footer-phone a {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.copyright {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+
+    text-align: center;
+
+    border-top:
+        1px solid rgba(255,255,255,0.2);
+
+    color: #c9d8cf;
+    font-size: 13px;
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 850px) {
+
+    .header-container {
+        padding: 8px 15px;
+    }
+
+    .logo-area img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo-text h1 {
+        font-size: 14px;
+    }
+
+    .logo-text p {
+        font-size: 10px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 66px;
+        left: 0;
+
+        width: 100%;
+
+        background: #075e2d;
+
+        padding: 12px 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    .page-hero {
+        min-height: 340px;
+    }
+
+    .page-hero h2 {
+        font-size: 39px;
+    }
+
+    .page-hero p {
+        font-size: 16px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .governance-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .president-card {
+        grid-template-columns: 1fr;
+    }
+
+    .president-photo {
+        min-height: 330px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .page-hero h2 {
+        font-size: 32px;
+    }
+
+    .page-hero-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .governance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .president-info {
+        padding: 28px 22px;
+    }
+
+    .logo-text h1 {
+        font-size: 12px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- ===============================
+     HEADER
+================================ -->
+
+<header>
+
+<div class="header-container">
+
+
+<div class="logo-area">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo">
+
+<div class="logo-text">
+
+<h1>
+IBAJI RESTORATION FOUNDATION
+</h1>
+
+<p>
+Agitating for Good Governance
+</p>
+
+</div>
+
+</div>
+
+
+<div
+class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+
+<nav id="navbar">
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html" class="active">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+<li>
+<a href="projects.html">
+Projects
+</a>
+</li>
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="partners.html">
+Partners
+</a>
+</li>
+
+<li>
+<a href="volunteer.html">
+Volunteer
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ===============================
+     PAGE HERO
+================================ -->
+
+<section class="page-hero">
+
+<div class="page-hero-content">
+
+<img
+class="page-hero-logo"
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo">
+
+<h2>
+ABOUT <span>US</span>
+</h2>
+
+<p>
+Learn more about Ibaji Restoration Foundation,
+our mission, vision, values and commitment to
+good governance and community development.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     WHO WE ARE
+================================ -->
+
+<section class="about-main">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Who We Are
+</h2>
+
+<p>
+Building a stronger future through responsible
+citizenship, advocacy and community development.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+
+<div class="about-image">
+
+<img
+src="https://i.ibb.co/vxC7zsC6/IMG-20260829-WA0180.jpg"
+alt="Ibaji Restoration Foundation">
+
+</div>
+
+
+<div class="about-text">
+
+<h3>
+About Ibaji Restoration Foundation
+</h3>
+
+<p>
+Ibaji Restoration Foundation (NGO) is a civic and
+community-focused organization committed to
+advocating for good governance, accountability,
+responsible leadership and sustainable development.
+</p>
+
+<p>
+The Foundation believes that communities become
+stronger when citizens are informed, engaged and
+given opportunities to participate constructively
+in matters that affect their lives.
+</p>
+
+<p>
+Through advocacy, awareness, community engagement
+and development-oriented initiatives, we seek to
+encourage positive change and promote a culture of
+responsibility and accountability.
+</p>
+
+<p>
+Our work is guided by respect for people, community
+participation, transparency and the pursuit of
+sustainable solutions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     MISSION & VISION
+================================ -->
+
+<section class="mission-vision">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Mission & Vision
+</h2>
+
+<p>
+The principles that guide the work of the Foundation.
+</p>
+
+</div>
+
+
+<div class="mv-grid">
+
+
+<div class="mv-card">
+
+<div class="mv-icon">
+🎯
+</div>
+
+<h3>
+Our Mission
+</h3>
+
+<p>
+To advocate for good governance, accountability,
+responsible leadership and meaningful citizen
+participation while supporting initiatives that
+contribute to sustainable community development.
+</p>
+
+</div>
+
+
+<div class="mv-card">
+
+<div class="mv-icon">
+🌍
+</div>
+
+<h3>
+Our Vision
+</h3>
+
+<p>
+To contribute to a society where responsible
+leadership, transparent governance, active
+citizenship and sustainable development create
+better opportunities and stronger communities.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     CORE VALUES
+================================ -->
+
+<section class="values">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Core Values
+</h2>
+
+<p>
+Values that shape our advocacy, programmes
+and community engagement.
+</p>
+
+</div>
+
+
+<div class="values-grid">
+
+
+<div class="value-card">
+
+<div class="value-icon">
+⚖️
+</div>
+
+<h3>
+Integrity
+</h3>
+
+<p>
+We promote honesty, ethical conduct and
+responsibility in our work.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-icon">
+🔎
+</div>
+
+<h3>
+Transparency
+</h3>
+
+<p>
+We support openness and access to information
+in public and community affairs.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-icon">
+📊
+</div>
+
+<h3>
+Accountability
+</h3>
+
+<p>
+We encourage leaders and institutions to be
+responsible to the people they serve.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-icon">
+🤝
+</div>
+
+<h3>
+Participation
+</h3>
+
+<p>
+We believe citizens should have a meaningful
+voice in matters affecting their communities.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-icon">
+🌱
+</div>
+
+<h3>
+Sustainability
+</h3>
+
+<p>
+We support development approaches that create
+lasting benefits for communities.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-icon">
+❤️
+</div>
+
+<h3>
+Service
+</h3>
+
+<p>
+We are committed to serving communities with
+respect, dedication and compassion.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     OBJECTIVES
+================================ -->
+
+<section class="objectives">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Objectives
+</h2>
+
+<p>
+Key areas through which the Foundation seeks
+to achieve its mission.
+</p>
+
+</div>
+
+
+<div class="objectives-box">
+
+<h3>
+What We Seek to Achieve
+</h3>
+
+<ul class="objectives-list">
+
+<li>
+Promote good governance and responsible leadership.
+</li>
+
+<li>
+Encourage transparency and accountability in public affairs.
+</li>
+
+<li>
+Create awareness about citizens' roles and responsibilities.
+</li>
+
+<li>
+Encourage constructive community dialogue and participation.
+</li>
+
+<li>
+Support community development initiatives that address
+local needs.
+</li>
+
+<li>
+Promote youth participation in civic and community affairs.
+</li>
+
+<li>
+Encourage peaceful and constructive advocacy for positive change.
+</li>
+
+<li>
+Build partnerships that contribute to sustainable development.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     GOVERNANCE PRINCIPLES
+================================ -->
+
+<section class="governance">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Good-Governance Principles
+</h2>
+
+<p>
+The principles at the heart of our advocacy work.
+</p>
+
+</div>
+
+
+<div class="governance-grid">
+
+
+<div class="governance-card">
+
+<div class="icon">
+🔎
+</div>
+
+<h3>
+Transparency
+</h3>
+
+<p>
+Promoting openness and access to information.
+</p>
+
+</div>
+
+
+<div class="governance-card">
+
+<div class="icon">
+⚖️
+</div>
+
+<h3>
+Accountability
+</h3>
+
+<p>
+Encouraging leaders to answer to citizens.
+</p>
+
+</div>
+
+
+<div class="governance-card">
+
+<div class="icon">
+🗣️
+</div>
+
+<h3>
+Participation
+</h3>
+
+<p>
+Encouraging citizens to participate in governance.
+</p>
+
+</div>
+
+
+<div class="governance-card">
+
+<div class="icon">
+🌍
+</div>
+
+<h3>
+Sustainable Development
+</h3>
+
+<p>
+Supporting development that benefits communities.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     PRESIDENT
+================================ -->
+
+<section class="president-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Leadership
+</h2>
+
+<p>
+Providing direction and leadership for the Foundation's mission.
+</p>
+
+</div>
+
+
+<div class="president-card">
+
+
+<div class="president-photo">
+
+<img
+src="https://i.ibb.co/Kc1CXf0m/IMG-20260829-WA0166.jpg"
+alt="COMR. REUBEN E. NAPOLEON">
+
+</div>
+
+
+<div class="president-info">
+
+<span class="president-label">
+PRESIDENT
+</span>
+
+<h3>
+COMR. REUBEN E. NAPOLEON
+</h3>
+
+<p>
+President, Ibaji Restoration Foundation (NGO).
+</p>
+
+<p>
+The President provides leadership and direction
+towards advancing the Foundation's commitment to
+good governance, accountability, responsible
+leadership and sustainable community development.
+</p>
+
+<a
+href="leadership.html"
+class="btn">
+
+View Leadership
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     CTA
+================================ -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Join Our Mission
+</h2>
+
+<p>
+Everyone has a role to play in building stronger
+communities and promoting good governance.
+Connect with Ibaji Restoration Foundation and
+become part of the movement.
+</p>
+
+<div class="phone">
+
+📞
+<a href="tel:+2347065421850">
++234 706 542 1850
+</a>
+
+</div>
+
+<a
+href="contact.html"
+class="btn">
+
+Contact Us
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     FOOTER
+================================ -->
+
+<footer>
+
+<div class="footer-content">
+
+
+<div
