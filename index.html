@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Ibaji Restoration Foundation (NGO) - Agitating for Good Governance, accountability, responsible leadership and sustainable community development.">
+
+<meta name="keywords" content="Ibaji Restoration Foundation, Ibaji NGO, good governance, community development, Kogi State, Nigeria">
+
+<meta name="author" content="Ibaji Restoration Foundation">
+
+<title>Ibaji Restoration Foundation | Agitating for Good Governance</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #f5f7f6;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: #075e2d;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 9px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo-area img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid white;
+}
+
+.logo-text h1 {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.logo-text p {
+    font-size: 12px;
+    color: #d9f5e3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 17px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffd700;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0,60,30,0.82),
+            rgba(0,30,15,0.92)
+        ),
+        url("https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.hero-logo {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    border: 4px solid white;
+    margin-bottom: 22px;
+}
+
+.hero h2 {
+    max-width: 850px;
+    font-size: 53px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.hero h2 span {
+    color: #ffd700;
+}
+
+.hero p {
+    max-width: 720px;
+    font-size: 19px;
+    color: #e7f1ea;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 27px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ffd700;
+    color: #123b24;
+}
+
+.btn-primary:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #075e2d;
+}
+
+/* MISSION STRIP */
+
+.mission-strip {
+    background: #075e2d;
+    color: white;
+    padding: 28px 20px;
+}
+
+.mission-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.mission-item {
+    padding: 10px 15px;
+}
+
+.mission-item:not(:last-child) {
+    border-right: 1px solid rgba(255,255,255,0.25);
+}
+
+.mission-item h3 {
+    color: #ffd700;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.mission-item p {
+    font-size: 13px;
+    color: #dcebe2;
+}
+
+/* GENERAL */
+
+section {
+    padding: 75px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: #075e2d;
+    font-size: 34px;
+    margin-bottom: 9px;
+}
+
+.section-title p {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+}
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.about-content h3 {
+    color: #075e2d;
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.check-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.check-list li {
+    margin-bottom: 10px;
+    padding-left: 28px;
+    position: relative;
+    color: #444;
+}
+
+.check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #075e2d;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* PROGRAMMES */
+
+.programmes {
+    background: #eef7f1;
+}
+
+.programme-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+}
+
+.programme-card {
+    background: white;
+    padding: 30px 23px;
+    border-radius: 10px;
+    border-top: 4px solid #075e2d;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.programme-card:hover {
+    transform: translateY(-6px);
+}
+
+.programme-icon {
+    width: 60px;
+    height: 60px;
+    background: #075e2d;
+    color: #ffd700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    margin-bottom: 16px;
+}
+
+.programme-card h3 {
+    color: #075e2d;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.programme-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.programme-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #075e2d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* GOVERNANCE */
+
+.governance {
+    background: white;
+}
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.governance-card {
+    text-align: center;
+    padding: 27px 15px;
+    border-radius: 9px;
+    background: #f7faf8;
+    border: 1px solid #e1ebe5;
+}
+
+.governance-icon {
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+
+.governance-card h3 {
+    color: #075e2d;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.governance-card p {
+    color: #666;
+    font-size: 13px;
+}
+
+/* LEADERSHIP */
+
+.leadership {
+    background: #eef7f1;
+}
+
+.leader-card {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.10);
+}
+
+.leader-photo {
+    min-height: 370px;
+}
+
+.leader-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leader-info {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.leader-position {
+    background: #075e2d;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 20px;
+    display: inline-block;
+    width: fit-content;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.leader-info h3 {
+    color: #075e2d;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.leader-info p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* NEWS */
+
+.news {
+    background: white;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+}
+
+.news-card {
+    background: #f7faf8;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e1ebe5;
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 22px;
+}
+
+.news-date {
+    color: #075e2d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.news-content h3 {
+    color: #222;
+    font-size: 19px;
+    margin: 8px 0;
+}
+
+.news-content p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* GALLERY */
+
+.gallery {
+    background: #eef7f1;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    height: 220px;
+    overflow: hidden;
+    border-radius: 9px;
+    background: #ddd;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.07);
+}
+
+.gallery-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* CTA */
+
+.contact-cta {
+    background: #075e2d;
+    color: white;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.contact-cta p {
+    max-width: 720px;
+    margin: 0 auto 25px;
+    color: #e0eee5;
+}
+
+.contact-phone {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.contact-phone a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background: #063b1e;
+    color: white;
+    padding: 45px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+footer h3 {
+    color: #ffd700;
+    margin-bottom: 14px;
+}
+
+footer p {
+    color: #d5e4da;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #d5e4da;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+.phone-footer {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.phone-footer a {
+    color: #ffd700;
+}
+
+.copyright {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    color: #c9d8cf;
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .header-container {
+        padding: 8px 15px;
+    }
+
+    .logo-area img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo-text h1 {
+        font-size: 14px;
+    }
+
+    .logo-text p {
+        font-size: 10px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        background: #075e2d;
+        padding: 12px 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    .hero {
+        min-height: 580px;
+    }
+
+    .hero h2 {
+        font-size: 39px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .mission-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 15px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .programme-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .governance-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .leader-card {
+        grid-template-columns: 1fr;
+    }
+
+    .leader-photo {
+        min-height: 330px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item {
+        height: 180px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero-logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .governance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 240px;
+    }
+
+    .logo-text h1 {
+        font-size: 12px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="header-container">
+
+<div class="logo-area">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo">
+
+<div class="logo-text">
+
+<h1>IBAJI RESTORATION FOUNDATION</h1>
+
+<p>Agitating for Good Governance</p>
+
+</div>
+
+</div>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<nav id="navbar">
+
+<ul>
+
+<li><a href="index.html" class="active">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="leadership.html">Leadership</a></li>
+
+<li><a href="programmes.html">Programmes</a></li>
+
+<li><a href="projects.html">Projects</a></li>
+
+<li><a href="news.html">News</a></li>
+
+<li><a href="events.html">Events</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="partners.html">Partners</a></li>
+
+<li><a href="volunteer.html">Volunteer</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img
+class="hero-logo"
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo">
+
+<h2>
+IBAJI RESTORATION
+<span>FOUNDATION</span>
+</h2>
+
+<p>
+Agitating for Good Governance, accountability,
+responsible leadership and sustainable development
+for our communities.
+</p>
+
+<div class="hero-buttons">
+
+<a href="about.html" class="btn btn-primary">
+Learn More About Us
+</a>
+
+<a href="volunteer.html" class="btn btn-outline">
+Get Involved
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MISSION -->
+
+<section class="mission-strip">
+
+<div class="mission-container">
+
+<div class="mission-item">
+
+<h3>Good Governance</h3>
+
+<p>
+Promoting transparent and responsible leadership.
+</p>
+
+</div>
+
+<div class="mission-item">
+
+<h3>Community Development</h3>
+
+<p>
+Supporting meaningful and sustainable development.
+</p>
+
+</div>
+
+<div class="mission-item">
+
+<h3>Citizen Participation</h3>
+
+<p>
+Encouraging citizens to have a voice in governance.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>About Ibaji Restoration Foundation</h2>
+
+<p>
+Working towards a better future through advocacy,
+accountability and community participation.
+</p>
+
+</div>
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img
+src="https://i.ibb.co/vxC7zsC6/IMG-20260829-WA0180.jpg"
+alt="Ibaji Restoration Foundation Activities">
+
+</div>
+
+<div class="about-content">
+
+<h3>Our Commitment</h3>
+
+<p>
+Ibaji Restoration Foundation (NGO) is committed
+to advocating for good governance and promoting
+responsible leadership that serves the interests
+of citizens and communities.
+</p>
+
+<p>
+We believe that informed and engaged citizens
+are essential to building stronger communities
+and encouraging accountable leadership.
+</p>
+
+<ul class="check-list">
+
+<li>Good governance advocacy</li>
+
+<li>Accountability and transparency</li>
+
+<li>Community development</li>
+
+<li>Citizen participation</li>
+
+<li>Youth engagement</li>
+
+</ul>
+
+<a href="about.html" class="btn btn-primary">
+Read More
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROGRAMMES -->
+
+<section class="programmes">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Programmes</h2>
+
+<p>
+Areas of focus through which the Foundation seeks
+to contribute to positive change.
+</p>
+
+</div>
+
+<div class="programme-grid">
+
+<div class="programme-card">
+
+<div class="programme-icon">⚖</div>
+
+<h3>Good Governance</h3>
+
+<p>
+Advocating for transparent, accountable and
+responsible governance.
+</p>
+
+<a href="programmes.html" class="programme-link">
+Learn More →
+</a>
+
+</div>
+
+<div class="programme-card">
+
+<div class="programme-icon">📢</div>
+
+<h3>Advocacy & Awareness</h3>
+
+<p>
+Creating awareness and encouraging constructive
+citizen participation.
+</p>
+
+<a href="programmes.html" class="programme-link">
+Learn More →
+</a>
+
+</div>
+
+<div class="programme-card">
+
+<div class="programme-icon">🤝</div>
+
+<h3>Community Development</h3>
+
+<p>
+Supporting community engagement and sustainable
+development initiatives.
+</p>
+
+<a href="programmes.html" class="programme-link">
+Learn More →
+</a>
+
+</div>
+
+<div class="programme-card">
+
+<div class="programme-icon">👥</div>
+
+<h3>Youth Participation</h3>
+
+<p>
+Encouraging young people to participate positively
+in civic and community affairs.
+</p>
+
+<a href="programmes.html" class="programme-link">
+Learn More →
+</a>
+
+</div>
+
+<div class="programme-card">
+
+<div class="programme-icon">📊</div>
+
+<h3>Accountability</h3>
+
+<p>
+Promoting transparency and responsible management
+of public affairs.
+</p>
+
+<a href="programmes.html" class="programme-link">
+Learn More →
+</a>
+
+</div>
+
+<div class="programme-card">
+
+<div class="programme-icon">🌱</div>
+
+<h3>Sustainable Development</h3>
+
+<p>
+Promoting long-term development that benefits
+communities and future generations.
+</p>
+
+<a href="programmes.html" class="programme-link">
+Learn More →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOVERNANCE -->
+
+<section class="governance">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Good-Governance Principles</h2>
+
+<p>
+Principles that guide our advocacy and engagement.
+</p>
+
+</div>
+
+<div class="governance-grid">
+
+<div class="governance-card">
+
+<div class="governance-icon">🔎</div>
+
+<h3>Transparency</h3>
+
+<p>
+Promoting openness in public affairs.
+</p>
+
+</div>
+
+<div class="governance-card">
+
+<div class="governance-icon">⚖️</div>
+
+<h3>Accountability</h3>
+
+<p>
+Encouraging leaders to answer to citizens.
+</p>
+
+</div>
+
+<div class="governance-card">
+
+<div class="governance-icon">🗣️</div>
+
+<h3>Participation</h3>
+
+<p>
+Giving citizens opportunities to be heard.
+</p>
+
+</div>
+
+<div class="governance-card">
+
+<div class="governance-icon">🌍</div>
+
+<h3>Development</h3>
+
+<p>
+Supporting sustainable community development.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LEADERSHIP -->
+
+<section class="leadership">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Leadership</h2>
+
+<p>
+Meet the President of Ibaji Restoration Foundation.
+</p>
+
+</div>
+
+<div class="leader-card">
+
+<div class="leader-photo">
+
+<img
+src="https://i.ibb.co/Kc1CXf0m/IMG-20260829-WA0166.jpg"
+alt="COMR. REUBEN E. NAPOLEON">
+
+</div>
+
+<div class="leader-info">
+
+<span class="leader-position">
+PRESIDENT
+</span>
+
+<h3>
+COMR. REUBEN E. NAPOLEON
+</h3>
+
+<p>
+President, Ibaji Restoration Foundation (NGO).
+</p>
+
+<p>
+Providing leadership and direction in the
+Foundation's commitment to good governance,
+accountability, responsible leadership and
+sustainable community development.
+</p>
+
+<a href="leadership.html" class="btn btn-primary">
+View Leadership
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NEWS -->
+
+<section class="news">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Latest News & Updates</h2>
+
+<p>
+Stay informed about activities, announcements
+and developments from the Foundation.
+</p>
+
+</div>
+
+<div class="news-grid">
+
+<article class="news-card">
+
+<img
+src="https://i.ibb.co/9B1cLgh/IMG-20260829-WA0181.jpg"
+alt="Ibaji Restoration Foundation News">
+
+<div class="news-content">
+
+<div class="news-date">
+FOUNDATION UPDATE
+</div>
+
+<h3>
+Promoting Good Governance
+</h3>
+
+<p>
+The Foundation continues to advocate
+for accountability, responsible leadership
+and citizen participation.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="news-card">
+
+<img
+src="https://i.ibb.co/vxC7zsC6/IMG-20260829-WA0180.jpg"
+alt="Community Engagement">
+
+<div class="news-content">
+
+<div class="news-date">
+COMMUNITY
+</div>
+
+<h3>
+Community Engagement
+</h3>
+
+<p>
+Building stronger communities through
+dialogue, awareness and constructive
+engagement.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="news-card">
+
+<img
+src="https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg"
+alt="Foundation Activities">
+
+<div class="news-content">
+
+<div class="news-date">
+ADVOCACY
+</div>
+
+<h3>
+Citizens and Good Governance
+</h3>
+
+<p>
+Encouraging citizens to take an active
+and responsible role in shaping their
+communities.
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+<div class="gallery-button">
+
+<a href="news.html" class="btn btn-primary">
+View All News
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Photo Gallery</h2>
+
+<p>
+Moments and activities from Ibaji Restoration
+Foundation.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+
+<img
+src="https://i.ibb.co/Kc1CXf0m/IMG-20260829-WA0166.jpg"
+alt="COMR. REUBEN E. NAPOLEON - President">
+
+</div>
+
+<div class="gallery-item">
+
+<img
+src="https://i.ibb.co/9B1cLgh/IMG-20260829-WA0181.jpg"
+alt="Foundation Activity">
+
+</div>
+
+<div class="gallery-item">
+
+<img
+src="https://i.ibb.co/vxC7zsC6/IMG-20260829-WA0180.jpg"
+alt="Foundation Activity">
+
+</div>
+
+<div class="gallery-item">
+
+<img
+src="https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg"
+alt="Community Engagement">
+
+</div>
+
+</div>
+
+<div class="gallery-button">
+
+<a href="gallery.html" class="btn btn-primary">
+View Full Gallery
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT CTA -->
+
+<section class="contact-cta">
+
+<div class="container">
+
+<h2>
+Be Part of the Movement
+</h2>
+
+<p>
+Join us in advocating for good governance,
+accountability, responsible leadership and
+sustainable development.
+</p>
+
+<div class="contact-phone">
+
+📞 <a href="tel:+2347065421850">
++234 706 542 1850
+</a>
+
+</div>
+
+<a href="contact.html" class="btn btn-primary">
+Contact Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h3>
+IBAJI RESTORATION FOUNDATION
+</h3>
+
+<p>
+Agitating for Good Governance.
+Promoting accountability, responsible leadership,
+citizen participation and sustainable development.
+</p>
+
+<p class="phone-footer">
+Phone:
+<a href="tel:+2347065421850">
++234 706 542 1850
+</a>
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About Us</a>
+</li>
+
+<li>
+<a href="leadership.html">Leadership</a>
+</li>
+
+<li>
+<a href="programmes.html">Programmes</a>
+</li>
+
+<li>
+<a href="projects.html">Projects</a>
+</li>
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+<li>
+<a href="events.html">Events</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>More</h3>
+
+<ul>
+
+<li>
+<a href="partners.html">Partners</a>
+</li>
+
+<li>
+<a href="volunteer.html">Volunteer</a>
+</li>
+
+<li>
+<a href="donate.html">Donate</a>
+</li>
+
+<li>
+<a href="publications.html">Publications</a>
+</li>
+
+<li>
+<a href="resources.html">Resources</a>
+</li>
+
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+
+<li>
+<a href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Ibaji Restoration Foundation (NGO).
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<script>
+
+function toggleMenu() {
+
+    document
+        .getElementById("navbar")
+        .classList
+        .toggle("active");
+
+}
+
+document
+    .querySelectorAll("#navbar a")
+    .forEach(function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                document
+                    .getElementById("navbar")
+                    .classList
+                    .remove("active");
+
+            }
+        );
+
+    });
+
+</script>
+
+</body>
+</html>
