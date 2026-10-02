@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Partners of Ibaji Restoration Foundation - organizations, institutions, community groups and development partners supporting good governance and sustainable community development.">
+
+<meta name="keywords"
+content="Ibaji Restoration Foundation partners, NGO partners, community partners, development partners, Kogi State">
+
+<meta name="author"
+content="Ibaji Restoration Foundation">
+
+<title>Partners | Ibaji Restoration Foundation</title>
+
+
+<style>
+
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222;
+    background:#f5f7f6;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+    background:#075e2d;
+    color:white;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    box-shadow:0 3px 12px rgba(0,0,0,0.2);
+}
+
+.header-container{
+    max-width:1200px;
+    margin:auto;
+
+    padding:9px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.logo-area img{
+    width:58px;
+    height:58px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:2px solid white;
+}
+
+.logo-text h1{
+    font-size:18px;
+    line-height:1.2;
+}
+
+.logo-text p{
+    font-size:12px;
+    color:#d9f5e3;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+nav ul{
+    display:flex;
+    list-style:none;
+
+    gap:15px;
+
+    align-items:center;
+}
+
+nav ul li a{
+    color:white;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#ffd700;
+}
+
+.menu-btn{
+    display:none;
+
+    font-size:29px;
+
+    cursor:pointer;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.page-hero{
+    min-height:440px;
+
+    display:flex;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(0,60,30,0.88),
+        rgba(0,30,15,0.94)
+    ),
+    url("https://i.ibb.co/RpxbD2ht/IMG-20260829-WA0179.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+
+    margin:auto;
+
+    padding:70px 20px;
+}
+
+.hero-logo{
+    width:105px;
+    height:105px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:4px solid white;
+
+    margin-bottom:20px;
+}
+
+.hero-content h2{
+    font-size:50px;
+
+    line-height:1.1;
+
+    margin-bottom:15px;
+}
+
+.hero-content h2 span{
+    color:#ffd700;
+}
+
+.hero-content p{
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    color:#e5f1e9;
+}
+
+
+/* =====================================
+   GENERAL
+===================================== */
+
+section{
+    padding:70px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    color:#075e2d;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+}
+
+.section-title p{
+    max-width:760px;
+
+    margin:auto;
+
+    color:#666;
+}
+
+
+/* =====================================
+   INTRO
+===================================== */
+
+.introduction{
+    background:white;
+}
+
+.introduction-box{
+    max-width:900px;
+
+    margin:auto;
+
+    padding:35px;
+
+    background:#eef7f1;
+
+    border-radius:12px;
+
+    border-left:5px solid #075e2d;
+
+    text-align:center;
+}
+
+.introduction-box p{
+    color:#555;
+
+    margin-bottom:12px;
+}
+
+
+/* =====================================
+   PARTNER TYPES
+===================================== */
+
+.partner-types{
+    background:#f5f7f6;
+}
+
+.partner-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+}
+
+.partner-card{
+    background:white;
+
+    padding:30px 18px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    border:1px solid #e1ebe5;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,0.06);
+
+    transition:0.3s;
+}
+
+.partner-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.10);
+}
+
+.partner-icon{
+    width:65px;
+    height:65px;
+
+    margin:0 auto 15px;
+
+    border-radius:50%;
+
+    background:#075e2d;
+
+    color:#ffd700;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:29px;
+}
+
+.partner-card h3{
+    color:#075e2d;
+
+    font-size:18px;
+
+    margin-bottom:8px;
+}
+
+.partner-card p{
+    color:#666;
+
+    font-size:13px;
+}
+
+
+/* =====================================
+   ORGANIZATIONS
+===================================== */
+
+.organizations{
+    background:white;
+}
+
+.organization-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:23px;
+}
+
+.organization-card{
+    background:#f7faf8;
+
+    padding:30px 23px;
+
+    border-radius:10px;
+
+    border:1px solid #e1ebe5;
+
+    border-top:4px solid #075e2d;
+
+    text-align:center;
+}
+
+.organization-logo{
+    width:80px;
+    height:80px;
+
+    margin:0 auto 17px;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:2px solid #075e2d;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#075e2d;
+
+    font-size:30px;
+}
+
+.organization-card h3{
+    color:#075e2d;
+
+    font-size:19px;
+
+    margin-bottom:8px;
+}
+
+.organization-card p{
+    color:#666;
+
+    font-size:14px;
+}
+
+
+/* =====================================
+   IMPORTANT NOTICE
+===================================== */
+
+.notice{
+    background:#fffdf0;
+}
+
+.notice-box{
+    max-width:900px;
+
+    margin:auto;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    border:1px solid #eadf9b;
+
+    text-align:center;
+}
+
+.notice-box h3{
+    color:#075e2d;
+
+    font-size:23px;
+
+    margin-bottom:10px;
+}
+
+.notice-box p{
+    color:#555;
+
+    font-size:14px;
+}
+
+
+/* =====================================
+   PARTNERSHIP BENEFITS
+===================================== */
+
+.benefits{
+    background:#eef7f1;
+}
+
+.benefits-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:25px;
+}
+
+.benefit-card{
+    background:white;
+
+    padding:28px;
+
+    border-radius:10px;
+
+    border:1px solid #e1ebe5;
+}
+
+.benefit-card h3{
+    color:#075e2d;
+
+    font-size:20px;
+
+    margin-bottom:9px;
+}
+
+.benefit-card p{
+    color:#666;
+
+    font-size:14px;
+}
+
+.check-list{
+    list-style:none;
+
+    margin-top:15px;
+}
+
+.check-list li{
+    position:relative;
+
+    padding-left:27px;
+
+    margin-bottom:9px;
+
+    color:#555;
+
+    font-size:14px;
+}
+
+.check-list li::before{
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#075e2d;
+
+    font-weight:bold;
+
+    font-size:18px;
+}
+
+
+/* =====================================
+   PRESIDENT
+===================================== */
+
+.leadership{
+    background:white;
+}
+
+.leader-card{
+    max-width:850px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    330px 1fr;
+
+    background:#f7faf8;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 7px 25px rgba(0,0,0,0.10);
+}
+
+.leader-photo{
+    min-height:380px;
+}
+
+.leader-photo img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.leader-info{
+    padding:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+.leader-position{
+    background:#075e2d;
+
+    color:white;
+
+    padding:7px 13px;
+
+    border-radius:20px;
+
+    display:inline-block;
+
+    width:max-content;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+}
+
+.leader-info h3{
+    color:#075e2d;
+
+    font-size:27px;
+
+    margin-bottom:10px;
+}
+
+.leader-info p{
+    color:#555;
+
+    margin-bottom:12px;
+}
+
+
+/* =====================================
+   CTA
+===================================== */
+
+.cta{
+    background:#075e2d;
+
+    color:white;
+
+    text-align:center;
+}
+
+.cta h2{
+    font-size:34px;
+
+    margin-bottom:10px;
+}
+
+.cta p{
+    max-width:750px;
+
+    margin:0 auto 24px;
+
+    color:#e0eee5;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:13px 25px;
+
+    background:#ffd700;
+
+    color:#123b24;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+
+    color:#075e2d;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+    background:#063b1e;
+
+    color:white;
+
+    padding:45px 20px 20px;
+}
+
+.footer-content{
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr 1fr;
+
+    gap:40px;
+}
+
+footer h3{
+    color:#ffd700;
+
+    margin-bottom:14px;
+}
+
+footer p{
+    color:#d5e4da;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-bottom:8px;
+}
+
+footer a{
+    color:#d5e4da;
+
+    font-size:14px;
+}
+
+footer a:hover{
+    color:#ffd700;
+}
+
+.footer-contact a{
+    color:#ffd700;
+
+    font-weight:bold;
+}
+
+.copyright{
+    max-width:1100px;
+
+    margin:30px auto 0;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    border-top:
+    1px solid rgba(255,255,255,0.2);
+
+    color:#c9d8cf;
+
+    font-size:13px;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:850px){
+
+    .header-container{
+        padding:8px 15px;
+    }
+
+    .logo-area img{
+        width:48px;
+        height:48px;
+    }
+
+    .logo-text h1{
+        font-size:14px;
+    }
+
+    .logo-text p{
+        font-size:10px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav{
+        display:none;
+
+        position:absolute;
+
+        top:66px;
+        left:0;
+
+        width:100%;
+
+        background:#075e2d;
+
+        padding:12px 0;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+        flex-direction:column;
+
+        gap:0;
+
+        text-align:center;
+    }
+
+    nav ul li{
+        padding:8px;
+    }
+
+    .hero-content h2{
+        font-size:39px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .partner-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .organization-grid{
+        grid-template-columns:1fr;
+    }
+
+    .benefits-grid{
+        grid-template-columns:1fr;
+    }
+
+    .leader-card{
+        grid-template-columns:1fr;
+    }
+
+    .leader-photo{
+        min-height:350px;
+    }
+
+    .footer-content{
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+}
+
+
+@media(max-width:450px){
+
+    .hero-content h2{
+        font-size:32px;
+    }
+
+    .hero-logo{
+        width:85px;
+        height:85px;
+    }
+
+    .partner-grid{
+        grid-template-columns:1fr;
+    }
+
+    .leader-info{
+        padding:28px 22px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header>
+
+<div class="header-container">
+
+
+<div class="logo-area">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo">
+
+
+<div class="logo-text">
+
+<h1>
+IBAJI RESTORATION FOUNDATION
+</h1>
+
+<p>
+Agitating for Good Governance
+</p>
+
+</div>
+
+</div>
+
+
+<div
+class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+
+<nav id="navbar">
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+<li>
+<a href="project.html">
+Projects
+</a>
+</li>
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a
+href="partners.html"
+class="active">
+Partners
+</a>
+</li>
+
+<li>
+<a href="volunteer.html">
+Volunteer
+</a>
+</li>
+
+<li>
+<a href="donate.html">
+Donate
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="page-hero">
+
+<div class="hero-content">
+
+<img
+class="hero-logo"
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo">
+
+
+<h2>
+OUR <span>PARTNERS</span>
+</h2>
+
+
+<p>
+Working together with organizations, institutions,
+community groups and development partners to promote
+good governance and sustainable community development.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     INTRODUCTION
+===================================== -->
+
+<section class="introduction">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Partnership & Collaboration
+</h2>
+
+<p>
+Strong partnerships can help communities achieve
+sustainable and meaningful development.
+</p>
+
+</div>
+
+
+<div class="introduction-box">
+
+<p>
+Ibaji Restoration Foundation recognises the importance
+of collaboration in advancing good governance,
+accountability, citizen participation and community
+development.
+</p>
+
+<p>
+We welcome constructive relationships with organizations,
+institutions, community groups, professional bodies,
+development partners and individuals who share compatible
+values and objectives.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     PARTNER TYPES
+===================================== -->
+
+<section class="partner-types">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Who We Work With
+</h2>
+
+<p>
+Our partnership approach is open to organizations and
+groups that share our commitment to positive community
+development.
+</p>
+
+</div>
+
+
+<div class="partner-grid">
+
+
+<div class="partner-card">
+
+<div class="partner-icon">
+🏢
+</div>
+
+<h3>
+Organizations
+</h3>
+
+<p>
+Civil society organizations, non-governmental
+organizations and other relevant bodies.
+</p>
+
+</div>
+
+
+<div class="partner-card">
+
+<div class="partner-icon">
+🏫
+</div>
+
+<h3>
+Institutions
+</h3>
+
+<p>
+Educational, professional and community institutions
+that support learning and development.
+</p>
+
+</div>
+
+
+<div class="partner-card">
+
+<div class="partner-icon">
+🤝
+</div>
+
+<h3>
+Community Groups
+</h3>
+
+<p>
+Community associations, youth groups and other
+grassroots organizations.
+</p>
+
+</div>
+
+
+<div class="partner-card">
+
+<div class="partner-icon">
+🌍
+</div>
+
+<h3>
+Development Partners
+</h3>
+
+<p>
+Partners interested in supporting sustainable
+development and community initiatives.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     PARTNER CATEGORIES
+===================================== -->
+
+<section class="organizations">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Our Partnership Areas
+</h2>
+
+<p>
+Potential areas of collaboration with the Foundation.
+</p>
+
+</div>
+
+
+<div class="organization-grid">
+
+
+<div class="organization-card">
+
+<div class="organization-logo">
+⚖️
+</div>
+
+<h3>
+Good Governance
+</h3>
+
+<p>
+Supporting initiatives that encourage transparency,
+accountability and responsible leadership.
+</p>
+
+</div>
+
+
+<div class="organization-card">
+
+<div class="organization-logo">
+🌱
+</div>
+
+<h3>
+Community Development
+</h3>
+
+<p>
+Collaborating on initiatives that contribute to
+sustainable community development.
+</p>
+
+</div>
+
+
+<div class="organization-card">
+
+<div class="organization-logo">
+📚
+</div>
+
+<h3>
+Education & Awareness
+</h3>
+
+<p>
+Supporting knowledge sharing, civic awareness and
+community education.
+</p>
+
+</div>
+
+
+<div class="organization-card">
+
+<div class="organization-logo">
+👥
+</div>
+
+<h3>
+Youth Engagement
+</h3>
+
+<p>
+Creating opportunities for young people to participate
+positively in community affairs.
+</p>
+
+</div>
+
+
+<div class="organization-card">
+
+<div class="organization-logo">
+📢
+</div>
+
+<h3>
+Advocacy
+</h3>
+
+<p>
+Working together on constructive advocacy and
+citizen engagement initiatives.
+</p>
+
+</div>
+
+
+<div class="organization-card">
+
+<div class="organization-logo">
+💡
+</div>
+
+<h3>
+Innovation
+</h3>
+
+<p>
+Encouraging practical ideas and solutions for
+community development challenges.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     NOTICE
+===================================== -->
+
+<section class="notice">
+
+<div class="container">
+
+
+<div class="notice-box">
+
+<h3>
+Partner Information
+</h3>
+
+
+<p>
+This page is intended to provide information about the
+Foundation's partnership approach. Specific partner names,
+logos and formal affiliations should only be published
+after the relevant partnership or permission has been
+confirmed.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     PARTNERSHIP BENEFITS
+===================================== -->
+
+<section class="benefits">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Why Partner With Us?
+</h2>
+
+<p>
+We believe responsible collaboration can create stronger
+and more sustainable community impact.
+</p>
+
+</div>
+
+
+<div class="benefits-grid">
+
+
+<div class="benefit-card">
+
+<h3>
+Shared Community Goals
+</h3>
+
+<p>
+Partnership can bring organizations and communities
+together around common development objectives.
+</p>
+
+
+<ul class="check-list">
+
+<li>
+Promoting good governance
+</li>
+
+<li>
+Encouraging accountability
+</li>
+
+<li>
+Strengthening citizen participation
+</li>
+
+<li>
+Supporting community development
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="benefit-card">
+
+<h3>
+Collaboration & Knowledge
+</h3>
+
+<p>
+Partners can contribute knowledge, experience,
+skills and resources to support appropriate
+community initiatives.
+</p>
+
+
+<ul class="check-list">
+
+<li>
+Knowledge sharing
+</li>
+
+<li>
+Capacity building
+</li>
+
+<li>
+Community networking
+</li>
+
+<li>
+Development collaboration
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     LEADERSHIP
+===================================== -->
+
+<section class="leadership">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Foundation Leadership
+</h2>
+
+<p>
+The Foundation's leadership provides direction for
+partnerships, programmes and community activities.
+</p>
+
+</div>
+
+
+<div class="leader-card">
+
+
+<div class="leader-photo">
+
+<img
+src="https://i.ibb.co/L2Gf2Lh/IMG-20260829-WA0166-2.jpg"
+alt="COMR. REUBEN E. NAPOLEON - President, Ibaji Restoration Foundation">
+
+</div>
+
+
+<div class="leader-info">
+
+<span class="leader-position">
+PRESIDENT
+</span>
+
+
+<h3>
+COMR. REUBEN E. NAPOLEON
+</h3>
+
+
+<p>
+President, Ibaji Restoration Foundation (NGO).
+</p>
+
+
+<p>
+Providing leadership and direction in the Foundation's
+commitment to good governance, accountability,
+responsible leadership and sustainable community
+development.
+</p>
+
+
+<a
+href="leadership.html"
+class="btn">
+
+View Leadership
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     CTA
+===================================== -->
+
+<section class="cta">
+
+<div class="container">
+
+
+<h2>
+Interested in Partnering With Us?
+</h2>
+
+
+<p>
+If your organization, institution, community group or
+development body is interested in working with Ibaji
+Restoration Foundation, we would be glad to hear from you.
+</p>
+
+
+<a
+href="contact.html"
+class="btn">
+
+Contact the Foundation
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+<div class="footer-content">
+
+
+<div>
+
+<h3>
+IBAJI RESTORATION FOUNDATION
+</h3>
+
+
+<p>
+Agitating for Good Governance.
+</p>
+
+
+<p>
+Promoting accountability, responsible leadership,
+citizen participation and sustainable development.
+</p>
+
+
+<p class="footer-contact">
+
+Phone:
+
+<br>
+
+<a href="tel:+2347065421850">
+07065421850
+</a>
+
+<br>
+
+<a href="tel:+2348185911238">
+08185911238
+</a>
+
+</p>
+
+
+<p class="footer-contact">
+
+Email:
+
+<br>
+
+<a href="mailto:ibajirestorationfoundation@gmail.com">
+ibajirestorationfoundation@gmail.com
+</a>
+
+</p>
+
+
+<p>
+
+Address:
+
+<br>
+
+NO 1 MR INEKWE HOUSE<br>
+OPPOSITE IBAJI LOCAL GOVERNMENT SECRETARIAT,<br>
+ONYedEGA, IBAJI,<br>
+KOGI STATE, NIGERIA
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+<li>
+<a href="project.html">
+Projects
+</a>
+</li>
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="partners.html">
+Partners
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+More
+</h3>
+
+
+<ul>
+
+<li>
+<a href="volunteer.html">
+Volunteer
+</a>
+</li>
+
+<li>
+<a href="donate.html">
+Donate
+</a>
+</li>
+
+<li>
+<a href="publications.html">
+Publications
+</a>
+</li>
+
+<li>
+<a href="resources.html">
+Resources
+</a>
+</li>
+
+<li>
+<a href="faq.html">
+FAQ
+</a>
+</li>
+
+<li>
+<a href="safeguarding.html">
+Safeguarding
+</a>
+</li>
+
+<li>
+<a href="privacy.html">
+Privacy Policy
+</a>
+</li>
+
+<li>
+<a href="terms.html">
+Terms & Conditions
+</a>
+</li>
+
+<li>
+<a href="sitemap.html">
+Sitemap
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Ibaji Restoration Foundation (NGO).
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("navbar")
+    .classList
+    .toggle("active");
+
+}
+
+
+document
+.querySelectorAll("#navbar a")
+.forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            document
+            .getElementById("navbar")
+            .classList
+            .remove("active");
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+  </html>
