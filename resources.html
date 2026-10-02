@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Resources from Ibaji Restoration Foundation (NGO), including reports, publications, governance materials, community resources and useful documents.">
+
+<meta name="keywords"
+content="Ibaji Restoration Foundation resources, NGO resources, reports, publications, good governance, community development">
+
+<meta name="author"
+content="Ibaji Restoration Foundation">
+
+<title>Resources | Ibaji Restoration Foundation</title>
+
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7f6;
+    color:#222;
+    line-height:1.7;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+section{
+    padding:70px 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#075e2d;
+    color:white;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.2);
+}
+
+.header-container{
+    max-width:1200px;
+    margin:auto;
+
+    padding:9px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.logo-area img{
+    width:58px;
+    height:58px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:2px solid white;
+}
+
+.logo-text h1{
+    font-size:18px;
+    line-height:1.2;
+}
+
+.logo-text p{
+    font-size:12px;
+    color:#d9f5e3;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:18px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+nav ul li a.active{
+    color:#ffd700;
+}
+
+.menu-btn{
+    display:none;
+    font-size:29px;
+    cursor:pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    background:
+    linear-gradient(
+        rgba(0,60,30,.90),
+        rgba(0,30,15,.95)
+    ),
+    url("https://i.ibb.co/Kc1CXf0m/IMG-20260829-WA0166.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+
+    padding:90px 20px;
+}
+
+.hero img{
+
+    width:105px;
+    height:105px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:4px solid white;
+
+    margin-bottom:18px;
+}
+
+.hero h2{
+
+    font-size:45px;
+
+    margin-bottom:10px;
+}
+
+.hero p{
+
+    color:#ffd700;
+
+    font-size:19px;
+
+    font-weight:bold;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+    background:white;
+    text-align:center;
+}
+
+.intro h2{
+    color:#075e2d;
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.intro p{
+    max-width:800px;
+    margin:auto;
+    color:#555;
+    font-size:15px;
+}
+
+
+/* =========================
+   RESOURCE GRID
+========================= */
+
+.resources-section{
+    background:#f5f7f6;
+}
+
+.resources-grid{
+
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:22px;
+}
+
+.resource-card{
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:28px 22px;
+
+    border:1px solid #e0e8e3;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,.06);
+
+    transition:.3s;
+}
+
+.resource-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.10);
+}
+
+.resource-icon{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:#e8f5ed;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+}
+
+.resource-card h3{
+
+    color:#075e2d;
+
+    font-size:20px;
+
+    margin-bottom:9px;
+}
+
+.resource-card p{
+
+    color:#666;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+}
+
+.resource-btn{
+
+    display:inline-block;
+
+    padding:9px 17px;
+
+    background:#075e2d;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:5px;
+
+    font-size:13px;
+
+    font-weight:bold;
+}
+
+.resource-btn:hover{
+
+    background:#064b24;
+}
+
+
+/* =========================
+   FEATURED RESOURCE
+========================= */
+
+.featured{
+
+    background:white;
+}
+
+.featured-container{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+}
+
+.featured-image{
+
+    height:300px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+}
+
+.featured-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.featured-text h2{
+
+    color:#075e2d;
+
+    font-size:30px;
+
+    margin-bottom:12px;
+}
+
+.featured-text p{
+
+    color:#555;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+}
+
+
+/* =========================
+   DOCUMENT LIST
+========================= */
+
+.documents{
+
+    background:#f5f7f6;
+}
+
+.documents-container{
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.documents h2{
+
+    text-align:center;
+
+    color:#075e2d;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+}
+
+.document-item{
+
+    background:white;
+
+    margin-bottom:12px;
+
+    padding:18px 20px;
+
+    border-radius:7px;
+
+    border-left:4px solid #075e2d;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.document-info h3{
+
+    color:#075e2d;
+
+    font-size:16px;
+
+    margin-bottom:3px;
+}
+
+.document-info p{
+
+    color:#777;
+
+    font-size:13px;
+}
+
+.document-link{
+
+    background:#075e2d;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:5px;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    white-space:nowrap;
+}
+
+.document-link:hover{
+
+    background:#064b24;
+}
+
+
+/* =========================
+   RESOURCE NOTICE
+========================= */
+
+.notice{
+
+    max-width:900px;
+
+    margin:30px auto 0;
+
+    background:#fff8df;
+
+    border-left:5px solid #d5aa00;
+
+    padding:20px;
+
+    border-radius:5px;
+}
+
+.notice strong{
+
+    color:#735c00;
+}
+
+.notice p{
+
+    color:#665c3b;
+
+    font-size:13px;
+
+    margin-top:5px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+
+    background:#075e2d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:65px 20px;
+}
+
+.cta h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:0 auto 25px;
+
+    color:#dcebe2;
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+.cta-btn{
+
+    display:inline-block;
+
+    background:#ffd700;
+
+    color:#123b24;
+
+    text-decoration:none;
+
+    padding:13px 25px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+}
+
+.cta-btn.secondary{
+
+    background:white;
+
+    color:#075e2d;
+}
+
+.cta-btn:hover{
+
+    opacity:.9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#063b1e;
+
+    color:white;
+
+    padding:45px 20px 20px;
+}
+
+.footer-content{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr 1fr;
+
+    gap:40px;
+}
+
+footer h3{
+
+    color:#ffd700;
+
+    margin-bottom:14px;
+}
+
+footer p{
+
+    color:#d5e4da;
+
+    font-size:14px;
+
+    margin-bottom:5px;
+}
+
+footer ul{
+
+    list-style:none;
+}
+
+footer li{
+
+    margin-bottom:8px;
+}
+
+footer a{
+
+    color:#d5e4da;
+
+    text-decoration:none;
+
+    font-size:14px;
+}
+
+footer a:hover{
+
+    color:#ffd700;
+}
+
+.copyright{
+
+    max-width:1100px;
+
+    margin:30px auto 0;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    border-top:
+    1px solid rgba(255,255,255,.2);
+
+    color:#c9d8cf;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .header-container{
+        padding:8px 15px;
+    }
+
+    .logo-area img{
+        width:48px;
+        height:48px;
+    }
+
+    .logo-text h1{
+        font-size:14px;
+    }
+
+    .logo-text p{
+        font-size:10px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav{
+
+        display:none;
+
+        position:absolute;
+
+        top:66px;
+
+        left:0;
+
+        width:100%;
+
+        background:#075e2d;
+
+        padding:12px 0;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        gap:0;
+
+        text-align:center;
+    }
+
+    nav ul li{
+        padding:11px;
+    }
+
+    .hero{
+        padding:65px 20px;
+    }
+
+    .hero h2{
+        font-size:34px;
+    }
+
+    .resources-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .featured-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .hero img{
+        width:85px;
+        height:85px;
+    }
+
+    .hero h2{
+        font-size:29px;
+    }
+
+    .resources-grid{
+        grid-template-columns:1fr;
+    }
+
+    .document-item{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .document-link{
+        margin-top:5px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="header-container">
+
+
+<div class="logo-area">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo"
+>
+
+<div class="logo-text">
+
+<h1>
+IBAJI RESTORATION FOUNDATION
+</h1>
+
+<p>
+Agitating for Good Governance
+</p>
+
+</div>
+
+</div>
+
+
+<div
+class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+
+<nav id="navbar">
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+<li>
+<a href="projects.html">
+Projects
+</a>
+</li>
+
+<li>
+<a href="publications.html">
+Publications
+</a>
+</li>
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+<li>
+<a href="partners.html">
+Partners
+</a>
+</li>
+
+<li>
+<a href="volunteer.html">
+Volunteer
+</a>
+</li>
+
+<li>
+<a href="donate.html">
+Donate
+</a>
+</li>
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="faq.html">
+FAQ
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<img
+src="https://i.ibb.co/WvBF51HX/IMG-20260829-WA0265.jpg"
+alt="Ibaji Restoration Foundation Logo"
+>
+
+<h2>
+Resources
+</h2>
+
+<p>
+Knowledge, Information and Materials for Community Development
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section class="intro">
+
+<div class="container">
+
+<h2>
+Our Resources
+</h2>
+
+<p>
+
+The Ibaji Restoration Foundation provides information,
+educational materials, publications and other resources
+to support good governance, civic participation,
+community development, advocacy and responsible
+citizenship.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     RESOURCE CATEGORIES
+========================= -->
+
+<section class="resources-section">
+
+<div class="resources-grid">
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+📄
+</div>
+
+<h3>
+Reports
+</h3>
+
+<p>
+
+Access Foundation reports, activity summaries,
+programme updates and other organizational documents.
+
+</p>
+
+<a
+href="publications.html"
+class="resource-btn">
+
+View Reports
+
+</a>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+📚
+</div>
+
+<h3>
+Publications
+</h3>
+
+<p>
+
+Read publications, articles, statements and educational
+materials produced by the Foundation.
+
+</p>
+
+<a
+href="publications.html"
+class="resource-btn">
+
+View Publications
+
+</a>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+🏛️
+</div>
+
+<h3>
+Good Governance
+</h3>
+
+<p>
+
+Resources promoting accountability, transparency,
+citizen participation and responsible leadership.
+
+</p>
+
+<a
+href="programmes.html"
+class="resource-btn">
+
+Explore Programmes
+
+</a>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+👥
+</div>
+
+<h3>
+Community Resources
+</h3>
+
+<p>
+
+Information and materials supporting community
+engagement, development and civic participation.
+
+</p>
+
+<a
+href="projects.html"
+class="resource-btn">
+
+View Projects
+
+</a>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+📅
+</div>
+
+<h3>
+Events
+</h3>
+
+<p>
+
+Find information about conferences, meetings,
+community programmes and Foundation events.
+
+</p>
+
+<a
+href="events.html"
+class="resource-btn">
+
+View Events
+
+</a>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="resource-icon">
+🤝
+</div>
+
+<h3>
+Volunteer Resources
+</h3>
+
+<p>
+
+Learn how to participate in Foundation activities
+and support our community initiatives.
+
+</p>
+
+<a
+href="volunteer.html"
+class="resource-btn">
+
+Volunteer
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FEATURED RESOURCE
+========================= -->
+
+<section class="featured">
+
+<div class="featured-container">
+
+
+<div class="featured-image">
+
+<img
+src="https://i.ibb.co/Kc1CXf0m/IMG-20260829-WA0166.jpg"
+alt="Ibaji Restoration Foundation Community Activity"
+>
+
+</div>
+
+
+<div class="featured-text">
+
+<h2>
+Knowledge for Positive Change
+</h2>
+
+<p>
+
+Information is an important part of effective
+community participation.
+
+</p>
+
+<p>
+
+Through our publications, programmes, advocacy
+activities and community engagements, the Foundation
+aims to encourage citizens to understand issues,
+participate constructively and promote good governance.
+
+</p>
+
+<a
+href="about.html"
+class="resource-btn">
+
+Learn About Us
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DOCUMENTS
+========================= -->
+
+<section class="documents">
+
+<div class="documents-container">
+
+<h2>
+Useful Documents
+</h2>
+
+
+<div class="document-item">
+
+<div class="document-info">
+
+<h3>
+Foundation Publications
+</h3>
+
+<p>
+Articles, statements and educational materials.
+</p>
+
+</div>
+
+<a
+href="publications.html"
+class="document-link">
+
+OPEN
+
+</a>
+
+</div>
+
+
+<div class="document-item">
+
+<div class="document-info">
+
+<h3>
+Programme Information
+</h3>
+
+<p>
+Information about our programmes and advocacy work.
+</p>
+
+</div>
+
+<a
+href="programmes.html"
+class="document-link">
+
+OPEN
+
+</a>
+
+</div>
+
+
+<div class="document-item">
+
+<div class="document-info">
+
+<h3>
+Community Projects
+</h3>
+
+<p>
+Information about community development initiatives.
+</p>
+
+</div>
+
+<a
+href="projects.html"
+class="document-link">
+
+OPEN
+
+</a>
+
+</div>
+
+
+<div class="document-item">
+
+<div class="document-info">
+
+<h3>
+Volunteer Information
+</h3>
+
+<p>
+Learn about opportunities to support the Foundation.
+</p>
+
+</div>
+
+<a
+href="volunteer.html"
+class="document-link">
+
+OPEN
+
+</a>
+
+</div>
+
+
+<div class="document-item">
+
+<div class="document-info">
+
+<h3>
+Partnership Information
+</h3>
+
+<p>
+Information for organizations and development partners.
+</p>
+
+</div>
+
+<a
+href="partners.html"
+class="document-link">
+
+OPEN
+
+</a>
+
+</div>
+
+
+<div class="notice">
+
+<strong>
+Note:
+</strong>
+
+<p>
+
+Additional reports, policy documents, research materials
+and downloadable resources can be added to this page
+as they become available.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Get Involved
+</h2>
+
+<p>
+
+Use our resources, participate in our programmes,
+support community development and join us in promoting
+good governance.
+
+</p>
+
+
+<div class="cta-buttons">
+
+<a
+href="volunteer.html"
+class="cta-btn">
+
+Become a Volunteer
+
+</a>
+
+
+<a
+href="donate.html"
+class="cta-btn secondary">
+
+Support Our Work
+
+</a>
+
+
+<a
+href="contact.html"
+class="cta-btn secondary">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-content">
+
+
+<div>
+
+<h3>
+IBAJI RESTORATION FOUNDATION
+</h3>
+
+<p>
+
+Agitating for Good Governance.
+
+Promoting accountability, responsible leadership,
+citizen participation and sustainable development.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<ul>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="leadership.html">Leadership</a>
+</li>
+
+<li>
+<a href="programmes.html">Programmes</a>
+</li>
+
+<li>
+<a href="projects.html">Projects</a>
+</li>
+
+<li>
+<a href="publications.html">Publications</a>
+</li>
+
+<li>
+<a href="events.html">Events</a>
+</li>
+
+<li>
+<a href="partners.html">Partners</a>
+</li>
+
+<li>
+<a href="volunteer.html">Volunteer</a>
+</li>
+
+<li>
+<a href="donate.html">Donate</a>
+</li>
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+
+<li>
+<a href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+Legal & Protection
+</h3>
+
+<p>
+<a href="privacy.html">
+Privacy Policy
+</a>
+</p>
+
+<p>
+<a href="terms.html">
+Terms & Conditions
+</a>
+</p>
+
+<p>
+<a href="safeguarding.html">
+Safeguarding
+</a>
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Ibaji Restoration Foundation (NGO).
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("navbar")
+    .classList
+    .toggle("active");
+
+}
+
+
+/* Close mobile menu after clicking a link */
+
+document
+.querySelectorAll("#navbar a")
+.forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            document
+            .getElementById("navbar")
+            .classList
+            .remove("active");
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+
+  </html>
